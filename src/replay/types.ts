@@ -1,4 +1,4 @@
-export type ReplayTurnData = {
+export type AWBWGame = {
   id: number;
   name: string;
   password: string | null;

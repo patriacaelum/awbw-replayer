@@ -1,5 +1,7 @@
-export type AWBWReplay = { [key: string]: AWBWReplayValue };
-export type AWBWReplayValue = null | number | string | AWBWReplay | AWBWReplayValue[];
+import { AWBWGame } from "./types";
+
+export type AWBWObject = { [key: string]: AWBWObjectValue };
+export type AWBWObjectValue = null | number | string | AWBWObject | AWBWObjectValue[];
 
 /** Parses the replay file into a Typescript object.
   * 
@@ -12,14 +14,34 @@ export type AWBWReplayValue = null | number | string | AWBWReplay | AWBWReplayVa
   * - `a:<integer>:{ ... }` = array of integer-value pairs
   */
 export class ReplayParser {
-  data: string;
+  lines: string[];
+  data: string = "";
   position: number = 0;
 
   constructor(data: string) {
-    this.data = data;
+    this.lines = data.split("\n");
   }
 
-  parseValue(): AWBWReplayValue {
+  parseTurnData(): AWBWGame[] {
+    const turnData: AWBWGame[] = [];
+
+    for (let line of this.lines) {
+      if (line.trim().length === 0) {
+        continue;
+      }
+
+      this.data = line;
+      this.position = 0;
+      const parsed = this.parseObject();
+      const game = parsed["awbwGame"] as AWBWGame;
+
+      turnData.push(game);
+    }
+
+    return turnData;
+  }
+
+  parseValue(): AWBWObjectValue {
     const character = this.data[this.position];
 
     switch (character) {
@@ -94,7 +116,7 @@ export class ReplayParser {
   /** Parse object value: `O:<integer>:"<string>":<integer>:{ ... }` where each
     * property is a string-value pair `s:<integer>:"<string>";< ... >`.
     */
-  private parseObject(): AWBWReplay {
+  private parseObject(): AWBWObject {
     this.expect("O");
     this.expect(":");
 
@@ -110,7 +132,7 @@ export class ReplayParser {
     this.expect(":");
     this.expect("{");
 
-    const object: AWBWReplay = {};
+    const object: AWBWObject = {};
     object[name] = {};
 
     for (let i = 0; i < propertyCount; i++) {
@@ -128,7 +150,7 @@ export class ReplayParser {
   /** Parses array value: `a:<integer>:{ ... }` where each element is an
     * integer-value pair `i:<integer>;< ... >`.
     */
-  private parseArray(): AWBWReplayValue[] {
+  private parseArray(): AWBWObjectValue[] {
     this.expect("a");
     this.expect(":");
 
@@ -136,7 +158,7 @@ export class ReplayParser {
     this.expect(":");
     this.expect("{");
 
-    const array: AWBWReplayValue[] = [];
+    const array: AWBWObjectValue[] = [];
 
     for (let i = 0; i < elementCount; i++) {
       const index = this.parseInteger();

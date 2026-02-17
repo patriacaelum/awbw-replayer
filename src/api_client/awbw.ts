@@ -24,6 +24,7 @@ export class AWBWAPIClient {
   baseURL: string = "https://awbw.amarriner.com/api";
 
   async getMapInfo(mapId: number): Promise<AWBWMapInfo> {
+    info(`Retrieving map ${mapId} from awbw...`);
     const response = await fetch(
       `${this.baseURL}/map/map_info.php?map_id=${mapId}`,
       { method: "GET" },
