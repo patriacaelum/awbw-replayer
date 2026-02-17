@@ -10,7 +10,19 @@
     "opener:default",
     "dialog:default",
     "log:default",
-    "fs:default",
+    "fs:read-all",
+    {
+      "identifier": "fs:allow-exists",
+      "allow": [{ "path": "$APPDATA/**" }]
+    },
+    {
+      "identifier": "fs:allow-appdata-write",
+      "allow": [{ "path": "$APPDATA/**" }]
+    },
+    {
+      "identifier": "fs:allow-mkdir",
+      "allow": [{ "path": "$APPDATA/**" }]
+    },
     {
       "identifier": "http:default",
       "allow": [{ "url": "https://awbw.amarriner.com"}]
