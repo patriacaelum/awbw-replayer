@@ -1,15 +1,8 @@
-import {
-  BaseDirectory,
-  exists,
-  mkdir,
-  readFile,
-  readTextFile,
-  writeTextFile,
-} from "@tauri-apps/plugin-fs";
-import { error, info } from "@tauri-apps/plugin-log";
+import { readFile } from "@tauri-apps/plugin-fs";
+import { info } from "@tauri-apps/plugin-log";
 
 import { AWBWAPIClient } from "../api_client/awbw";
-import { unzipReplayFile } from "../fileIO";
+import { createDirectory, pathExists, saveFile, unzipReplayFile } from "../fileIO";
 import { ReplayParser } from "./parser";
 
 export async function loadReplayFile(filepath: string) {
@@ -23,42 +16,14 @@ export async function loadReplayFile(filepath: string) {
   const turn = turnData[0];
   const mapId = turn.maps_id;
   const mapFilename = `maps/${mapId}.json`;
-  const mapFileOptions = { baseDir: BaseDirectory.AppData };
 
-  try {
-    await mkdir("maps", { ...mapFileOptions, recursive: true });
-    info("Created maps directory");
-  } catch (err) {
-    error(JSON.stringify(err));
-    throw new Error("Unable to create maps directory");
-  }
+  await createDirectory("maps");
+  const mapFileExists = await pathExists(mapFilename);
 
-  let mapFileExists = false;
-  try {
-    mapFileExists = await exists(mapFilename, mapFileOptions);
-  } catch (err) {
-    error(JSON.stringify(err));
-    throw new Error("Unable to check if file exists");
-  }
-  let map;
-
-  if (mapFileExists) {
-    info(`Found map ${mapId} locally, loading...`);
-    map = await readTextFile(mapFilename, mapFileOptions);
-  } else {
-    info(`Failed to find ${mapFilename} locally`);
-
+  if (!mapFileExists) {
     const client = new AWBWAPIClient();
-    map = await client.getMapInfo(mapId);
-
-    try {
-      info(`Saving map ${mapId} to ${mapFilename}...`)
-      await writeTextFile(mapFilename, JSON.stringify(map), mapFileOptions);
-      info(`Successfully saved map ${mapId} to ${mapFilename}`);
-    } catch (err) {
-      error(JSON.stringify(err));
-      throw new Error("Failed to write map to file");
-    }
+    const mapInfo = await client.getMapInfo(mapId);
+    await saveFile(mapFilename, JSON.stringify(mapInfo));
   }
 
   // TODO: parse action data

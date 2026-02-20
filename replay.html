@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/static/oat.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AWBW Replayer</title>
+    <script src="/src/static/oat.min.js" defer></script>
+    <script type="module" src="/src/views/replay.ts" defer></script>
+  </head>
+  <body>
+    <h1 x-data="{ replayId: $store.replay.replayId }">
+      Loading replay <span x-text="replayId"></span>...
+    </h1>
+    <h2 x-data="{ mapId: $store.replay.mapId }" x-show="mapId !== null">
+      Loading map <span x-text="mapId"></span>...
+    </h2>
+    <h2
+      x-data="{ mapLoadingError: $store.replay.mapLoadingError }"
+      x-text="mapLoadingError"
+      x-show="mapLoadingError !== null"
+      >
+    </h2>
+  </body>
+</html>

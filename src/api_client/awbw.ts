@@ -1,7 +1,9 @@
 import { fetch } from "@tauri-apps/plugin-http";
 import { info, error } from "@tauri-apps/plugin-log";
 
-type AWBWMapInfo = {
+export type AWBWMapInfo = {
+  err: string | undefined;
+  message: string | undefined;
   Name: string;
   Author: string;
   "Player Count": number;
@@ -26,7 +28,7 @@ export class AWBWAPIClient {
   async getMapInfo(mapId: number): Promise<AWBWMapInfo> {
     info(`Retrieving map ${mapId} from awbw...`);
     const response = await fetch(
-      `${this.baseURL}/map/map_info.php?map_id=${mapId}`,
+      `${this.baseURL}/map/map_info.php?maps_id=${encodeURIComponent(mapId)}`,
       { method: "GET" },
     );
 
@@ -37,6 +39,10 @@ export class AWBWAPIClient {
     }
 
     const data = await response.json() as AWBWMapInfo;
+
+    if (data.err !== undefined) {
+      error(`Failed to get map ${mapId}: ${data.err} - ${JSON.stringify(data)}`);
+    }
 
     return data;
   }
