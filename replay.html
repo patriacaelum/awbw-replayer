@@ -8,18 +8,45 @@
     <script src="/src/static/oat.min.js" defer></script>
     <script type="module" src="/src/views/replay.ts" defer></script>
   </head>
-  <body>
-    <h1 x-data="{ replayId: $store.replay.replayId }">
-      Loading replay <span x-text="replayId"></span>...
+  <body x-data="">
+    <h1 x-show="$store.replayId">
+      Loading replay <span x-text="$store.replayId"></span>...
     </h1>
-    <h2 x-data="{ mapId: $store.replay.mapId }" x-show="mapId !== null">
-      Loading map <span x-text="mapId"></span>...
+    <h2 x-show="$store.mapId !== null">
+      Loading map <span x-text="$store.mapId"></span>...
     </h2>
     <h2
-      x-data="{ mapLoadingError: $store.replay.mapLoadingError }"
-      x-text="mapLoadingError"
-      x-show="mapLoadingError !== null"
-      >
+      x-text="$store.mapLoadingError"
+      x-show="$store.mapLoadingError"
+    >
     </h2>
+
+    <div
+      id="map-info"
+      x-show="$store.mapName && $store.mapAuthor"
+      style="text-align: center;"
+    >
+      <h2>
+        Map: <span x-text="$store.mapName"></span>
+      </h2>
+      <h3>
+        by <span x-text="$store.mapAuthor"></span>
+      </h3>
+    </div> <!-- map-info -->
+
+    <div
+      id="game-section"
+      x-show="$store.mapSize"
+    >
+      x: <span x-text="$store.mapSize.x * $store.cellSize"></span>
+      y: <span x-text="$store.mapSize.y * $store.cellSize"></span>
+      <canvas
+        id="map-grid"
+        :width="($store.mapSize?.x ?? 0) * $store.cellSize"
+        :height="($store.mapSize?.y ?? 0) * $store.cellSize"
+        style="display: block; margin: auto;"
+      >
+      </canvas>
+    </div> <!-- game-section -->
   </body>
 </html>
