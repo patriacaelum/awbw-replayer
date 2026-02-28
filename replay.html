@@ -12,14 +12,10 @@
     <h1 x-show="$store.replayId">
       Loading replay <span x-text="$store.replayId"></span>...
     </h1>
-    <h2 x-show="$store.mapId !== null">
+    <h2 x-show="$store.mapId && !$store.mapSize">
       Loading map <span x-text="$store.mapId"></span>...
     </h2>
-    <h2
-      x-text="$store.mapLoadingError"
-      x-show="$store.mapLoadingError"
-    >
-    </h2>
+    <h2 x-text="$store.mapLoadingError" x-show="$store.mapLoadingError"></h2>
 
     <div
       id="map-info"
@@ -34,19 +30,8 @@
       </h3>
     </div> <!-- map-info -->
 
-    <div
-      id="game-section"
-      x-show="$store.mapSize"
-    >
-      x: <span x-text="$store.mapSize.x * $store.cellSize"></span>
-      y: <span x-text="$store.mapSize.y * $store.cellSize"></span>
-      <canvas
-        id="map-grid"
-        :width="($store.mapSize?.x ?? 0) * $store.cellSize"
-        :height="($store.mapSize?.y ?? 0) * $store.cellSize"
-        style="display: block; margin: auto;"
-      >
-      </canvas>
+    <div id="game-section" x-show="$store.mapSize">
+      <canvas id="map-grid" style="display: block; margin: auto;"></canvas>
     </div> <!-- game-section -->
   </body>
 </html>

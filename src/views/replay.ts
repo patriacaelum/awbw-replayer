@@ -4,6 +4,7 @@ import { info } from "@tauri-apps/plugin-log";
 import { openFile, pathExists, saveFile } from "../fileIO";
 import { AWBWAPIClient, AWBWMapInfo } from "../api_client/awbw";
 import { ReplayParser } from "../replay/parser";
+import { drawMap } from "../replay/map";
 
 if (document.readyState === "loading") {
   window.addEventListener("DOMContentLoaded", setup);
@@ -61,6 +62,9 @@ async function loadMapFile(mapId: number) {
 
   const sizeX = mapData["Size X"];
   const sizeY = mapData["Size Y"];
+  const tiles = mapData["Terrain Map"];
+  const distinctTiles = [...new Set(tiles.flat())].sort();
+  info(`Distinct tile values (${distinctTiles.length}): ${distinctTiles.join(", ")}`);
   const cellSize = 32;
 
   info(`Successfully loaded map ${mapId}`);
@@ -69,34 +73,7 @@ async function loadMapFile(mapId: number) {
   Alpine.store("mapSize", { x: sizeX, y: sizeY });
   Alpine.store("cellSize", cellSize);
 
+
   const canvas = document.getElementById("map-grid") as HTMLCanvasElement;
-  const context = canvas.getContext("2d");
-
-  if (context) {
-    canvas.width = sizeX * cellSize;
-    canvas.height = sizeY * cellSize;
-
-    info(`Canvas has size x=${canvas.width}, y=${canvas.height}`);
-
-    context.fillStyle = "black";
-    context.fillRect(0, 0, canvas.width, canvas.height);
-
-    context.strokeStyle = "rgba(255, 255, 255, 0.4)";
-    context.lineWidth = 1;
-
-    for (let col = 0; col <= sizeX; col++) {
-      const x = col * cellSize;
-      context.beginPath();
-      context.moveTo(x, 0);
-      context.lineTo(x, canvas.height);
-      context.stroke();
-    }
-    for (let row = 0; row <= sizeY; row++) {
-      const y = row * cellSize;
-      context.beginPath();
-      context.moveTo(0, y);
-      context.lineTo(canvas.width, y);
-      context.stroke();
-    }
-  }
+  await drawMap(canvas, mapData);
 }

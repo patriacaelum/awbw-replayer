@@ -1,0 +1,4911 @@
+{
+  "1": {
+    "name": "plain",
+    "defence": 1,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 2,
+      "air": 1
+    },
+    "terrain": "plain"
+  },
+  "2": {
+    "name": "mountain",
+    "defence": 4,
+    "movementCost": {
+      "lightInfantry": 2,
+      "heavyInfantry": 1,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "mountain"
+  },
+  "3": {
+    "name": "wood",
+    "defence": 2,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 2,
+      "tire": 3,
+      "air": 1
+    },
+    "terrain": "forest"
+  },
+  "4": {
+    "name": "river_ew",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 2,
+      "heavyInfantry": 1,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "river"
+  },
+  "5": {
+    "name": "river_ns",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 2,
+      "heavyInfantry": 1,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "river"
+  },
+  "6": {
+    "name": "river_nesw",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 2,
+      "heavyInfantry": 1,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "river"
+  },
+  "7": {
+    "name": "river_es",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 2,
+      "heavyInfantry": 1,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "river"
+  },
+  "8": {
+    "name": "river_sw",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 2,
+      "heavyInfantry": 1,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "river"
+  },
+  "9": {
+    "name": "river_nw",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 2,
+      "heavyInfantry": 1,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "river"
+  },
+  "10": {
+    "name": "river_ne",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 2,
+      "heavyInfantry": 1,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "river"
+  },
+  "11": {
+    "name": "river_esw",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 2,
+      "heavyInfantry": 1,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "river"
+  },
+  "12": {
+    "name": "river_nsw",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 2,
+      "heavyInfantry": 1,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "river"
+  },
+  "13": {
+    "name": "river_new",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 2,
+      "heavyInfantry": 1,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "river"
+  },
+  "14": {
+    "name": "river_nes",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 2,
+      "heavyInfantry": 1,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "river"
+  },
+  "15": {
+    "name": "road_ew",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "road"
+  },
+  "16": {
+    "name": "road_ns",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "road"
+  },
+  "17": {
+    "name": "road_nesw",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "road"
+  },
+  "18": {
+    "name": "road_es",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "road"
+  },
+  "19": {
+    "name": "road_sw",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "road"
+  },
+  "20": {
+    "name": "road_nw",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "road"
+  },
+  "21": {
+    "name": "road_ne",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "road"
+  },
+  "22": {
+    "name": "road_esw",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "road"
+  },
+  "23": {
+    "name": "road_nsw",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "road"
+  },
+  "24": {
+    "name": "road_new",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "road"
+  },
+  "25": {
+    "name": "road_nes",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "road"
+  },
+  "26": {
+    "name": "bridge_ew",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "road"
+  },
+  "27": {
+    "name": "bridge_ns",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "road"
+  },
+  "28": {
+    "name": "sea",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "29": {
+    "name": "shoal_n",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "30": {
+    "name": "shoal_s",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "31": {
+    "name": "shoal_e",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "32": {
+    "name": "shoal_w",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "33": {
+    "name": "reef",
+    "defence": 1,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "34": {
+    "name": "neutral/city",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "City",
+    "countryId": 0,
+    "frames": []
+  },
+  "35": {
+    "name": "neutral/base",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": 1
+    },
+    "terrain": "Base",
+    "countryId": 0,
+    "frames": []
+  },
+  "36": {
+    "name": "neutral/airport",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Airport",
+    "countryId": 0,
+    "frames": []
+  },
+  "37": {
+    "name": "neutral/port",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Port",
+    "countryId": 0,
+    "frames": []
+  },
+  "38": {
+    "name": "orange_star/city",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "City",
+    "countryId": 1,
+    "frames": [
+      300,
+      1200,
+      100
+    ]
+  },
+  "39": {
+    "name": "orange_star/base",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": 1
+    },
+    "terrain": "Base",
+    "countryId": 1,
+    "frames": [
+      300,
+      100,
+      400,
+      400,
+      300,
+      100
+    ]
+  },
+  "40": {
+    "name": "orange_star/airport",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Airport",
+    "countryId": 1,
+    "frames": [
+      300,
+      1200,
+      100
+    ]
+  },
+  "41": {
+    "name": "orange_star/port",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Port",
+    "countryId": 1,
+    "frames": [
+      300,
+      1200,
+      100
+    ]
+  },
+  "42": {
+    "name": "orange_star/hq",
+    "defence": 4,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "HQ",
+    "countryId": 1,
+    "frames": [
+      300,
+      1200,
+      100
+    ]
+  },
+  "43": {
+    "name": "blue_moon/city",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "City",
+    "countryId": 2,
+    "frames": [
+      200,
+      1200,
+      200
+    ]
+  },
+  "44": {
+    "name": "blue_moon/base",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": 1
+    },
+    "terrain": "Base",
+    "countryId": 2,
+    "frames": [
+      200,
+      200,
+      400,
+      400,
+      200,
+      200
+    ]
+  },
+  "45": {
+    "name": "blue_moon/airport",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Airport",
+    "countryId": 2,
+    "frames": [
+      200,
+      1200,
+      200
+    ]
+  },
+  "46": {
+    "name": "blue_moon/port",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Port",
+    "countryId": 2,
+    "frames": [
+      200,
+      1200,
+      200
+    ]
+  },
+  "47": {
+    "name": "blue_moon/hq",
+    "defence": 4,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "HQ",
+    "countryId": 2,
+    "frames": [
+      200,
+      1200,
+      200
+    ]
+  },
+  "48": {
+    "name": "green_earth/city",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "City",
+    "countryId": 3,
+    "frames": [
+      100,
+      1200,
+      300
+    ]
+  },
+  "49": {
+    "name": "green_earth/base",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": 1
+    },
+    "terrain": "Base",
+    "countryId": 3,
+    "frames": [
+      100,
+      300,
+      400,
+      400,
+      100,
+      300
+    ]
+  },
+  "50": {
+    "name": "green_earth/airport",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Airport",
+    "countryId": 3,
+    "frames": [
+      100,
+      1200,
+      300
+    ]
+  },
+  "51": {
+    "name": "green_earth/port",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Port",
+    "countryId": 3,
+    "frames": [
+      100,
+      1200,
+      300
+    ]
+  },
+  "52": {
+    "name": "green_earth/hq",
+    "defence": 4,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "HQ",
+    "countryId": 3,
+    "frames": [
+      100,
+      1200,
+      300
+    ]
+  },
+  "53": {
+    "name": "yellow_comet/city",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "City",
+    "countryId": 4,
+    "frames": [
+      1200,
+      400
+    ]
+  },
+  "54": {
+    "name": "yellow_comet/base",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": 1
+    },
+    "terrain": "Base",
+    "countryId": 4,
+    "frames": [
+      400,
+      400,
+      400,
+      400
+    ]
+  },
+  "55": {
+    "name": "yellow_comet/airport",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Airport",
+    "countryId": 4,
+    "frames": [
+      1200,
+      400
+    ]
+  },
+  "56": {
+    "name": "yellow_comet/port",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Port",
+    "countryId": 4,
+    "frames": [
+      1200,
+      400
+    ]
+  },
+  "57": {
+    "name": "yellow_comet/hq",
+    "defence": 4,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "HQ",
+    "countryId": 4,
+    "frames": [
+      1200,
+      400
+    ]
+  },
+  "81": {
+    "name": "red_fire/city",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "City",
+    "countryId": 6,
+    "frames": [
+      1000,
+      400,
+      200
+    ]
+  },
+  "82": {
+    "name": "red_fire/base",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": 1
+    },
+    "terrain": "Base",
+    "countryId": 6,
+    "frames": [
+      400,
+      400,
+      200,
+      200,
+      200,
+      200
+    ]
+  },
+  "83": {
+    "name": "red_fire/airport",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Airport",
+    "countryId": 6,
+    "frames": [
+      1000,
+      400,
+      200
+    ]
+  },
+  "84": {
+    "name": "red_fire/port",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Port",
+    "countryId": 6,
+    "frames": [
+      1000,
+      400,
+      200
+    ]
+  },
+  "85": {
+    "name": "red_fire/hq",
+    "defence": 4,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "HQ",
+    "countryId": 6,
+    "frames": [
+      600,
+      400,
+      200,
+      200,
+      400,
+      600,
+      200,
+      400,
+      600,
+      600,
+      400,
+      200
+    ]
+  },
+  "86": {
+    "name": "grey_sky/city",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "City",
+    "countryId": 7,
+    "frames": [
+      900,
+      400,
+      300
+    ]
+  },
+  "87": {
+    "name": "grey_sky/base",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": 1
+    },
+    "terrain": "Base",
+    "countryId": 7,
+    "frames": [
+      400,
+      400,
+      100,
+      300,
+      100,
+      300
+    ]
+  },
+  "88": {
+    "name": "grey_sky/airport",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Airport",
+    "countryId": 7,
+    "frames": [
+      900,
+      400,
+      300
+    ]
+  },
+  "89": {
+    "name": "grey_sky/port",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Port",
+    "countryId": 7,
+    "frames": [
+      900,
+      400,
+      300
+    ]
+  },
+  "90": {
+    "name": "grey_sky/hq",
+    "defence": 4,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "HQ",
+    "countryId": 7,
+    "frames": [
+      900,
+      400,
+      300
+    ]
+  },
+  "91": {
+    "name": "black_hole/city",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "City",
+    "countryId": 5,
+    "frames": [
+      1100,
+      400,
+      100
+    ]
+  },
+  "92": {
+    "name": "black_hole/base",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": 1
+    },
+    "terrain": "Base",
+    "countryId": 5,
+    "frames": [
+      400,
+      400,
+      300,
+      100,
+      300,
+      100
+    ]
+  },
+  "93": {
+    "name": "black_hole/airport",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Airport",
+    "countryId": 5,
+    "frames": [
+      1100,
+      400,
+      100
+    ]
+  },
+  "94": {
+    "name": "black_hole/port",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Port",
+    "countryId": 5,
+    "frames": [
+      1100,
+      400,
+      100
+    ]
+  },
+  "95": {
+    "name": "black_hole/hq",
+    "defence": 4,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "HQ",
+    "countryId": 5,
+    "frames": [
+      1100,
+      400,
+      100
+    ]
+  },
+  "96": {
+    "name": "brown_desert/city",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "City",
+    "countryId": 8,
+    "frames": [
+      800,
+      400,
+      400
+    ]
+  },
+  "97": {
+    "name": "brown_desert/base",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": 1
+    },
+    "terrain": "Base",
+    "countryId": 8,
+    "frames": [
+      400,
+      400,
+      400,
+      400
+    ]
+  },
+  "98": {
+    "name": "brown_desert/airport",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Airport",
+    "countryId": 8,
+    "frames": [
+      800,
+      400,
+      400
+    ]
+  },
+  "99": {
+    "name": "brown_desert/port",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Port",
+    "countryId": 8,
+    "frames": [
+      800,
+      400,
+      400
+    ]
+  },
+  "100": {
+    "name": "brown_desert/hq",
+    "defence": 4,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "HQ",
+    "countryId": 8,
+    "frames": [
+      800,
+      400,
+      400
+    ]
+  },
+  "101": {
+    "name": "pipe_ns",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 0
+    },
+    "terrain": "building"
+  },
+  "102": {
+    "name": "pipe_ew",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 0
+    },
+    "terrain": "building"
+  },
+  "103": {
+    "name": "pipe_ne",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 0
+    },
+    "terrain": "building"
+  },
+  "104": {
+    "name": "pipe_es",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 0
+    },
+    "terrain": "building"
+  },
+  "105": {
+    "name": "pipe_sw",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 0
+    },
+    "terrain": "building"
+  },
+  "106": {
+    "name": "pipe_nw",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 0
+    },
+    "terrain": "building"
+  },
+  "107": {
+    "name": "pipe_end_n",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 0
+    },
+    "terrain": "building"
+  },
+  "108": {
+    "name": "pipe_end_e",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 0
+    },
+    "terrain": "building"
+  },
+  "109": {
+    "name": "pipe_end_s",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 0
+    },
+    "terrain": "building"
+  },
+  "110": {
+    "name": "pipe_end_w",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 0
+    },
+    "terrain": "building"
+  },
+  "111": {
+    "name": "silo",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Missile",
+    "countryId": 0,
+    "frames": []
+  },
+  "112": {
+    "name": "silo_empty",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "plain"
+  },
+  "113": {
+    "name": "pipe_seam_ew",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": -1,
+      "heavyInfantry": -1,
+      "tread": -1,
+      "tire": -1,
+      "air": -1,
+      "pipe": 1
+    },
+    "terrain": "PipeSeam",
+    "countryId": 0,
+    "frames": []
+  },
+  "114": {
+    "name": "pipe_seam_ns",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": -1,
+      "heavyInfantry": -1,
+      "tread": -1,
+      "tire": -1,
+      "air": -1,
+      "pipe": 1
+    },
+    "terrain": "PipeSeam",
+    "countryId": 0,
+    "frames": []
+  },
+  "115": {
+    "name": "pipe_rubble_ew",
+    "defence": 1,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 2,
+      "air": 1
+    },
+    "terrain": "plain"
+  },
+  "116": {
+    "name": "pipe_rubble_ns",
+    "defence": 1,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 2,
+      "air": 1
+    },
+    "terrain": "plain"
+  },
+  "117": {
+    "name": "amber_blossom/airport",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Airport",
+    "countryId": 9,
+    "frames": [
+      700,
+      400,
+      500
+    ]
+  },
+  "118": {
+    "name": "amber_blossom/base",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": 1
+    },
+    "terrain": "Base",
+    "countryId": 9,
+    "frames": [
+      400,
+      300,
+      100,
+      300,
+      100,
+      400
+    ]
+  },
+  "119": {
+    "name": "amber_blossom/city",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "City",
+    "countryId": 9,
+    "frames": [
+      700,
+      400,
+      500
+    ]
+  },
+  "120": {
+    "name": "amber_blossom/hq",
+    "defence": 4,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "HQ",
+    "countryId": 9,
+    "frames": [
+      700,
+      400,
+      500
+    ]
+  },
+  "121": {
+    "name": "amber_blossom/port",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Port",
+    "countryId": 9,
+    "frames": [
+      700,
+      400,
+      500
+    ]
+  },
+  "122": {
+    "name": "jade_sun/airport",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Airport",
+    "countryId": 10,
+    "frames": [
+      600,
+      400,
+      600
+    ]
+  },
+  "123": {
+    "name": "jade_sun/base",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": 1
+    },
+    "terrain": "Base",
+    "countryId": 10,
+    "frames": [
+      400,
+      200,
+      200,
+      200,
+      200,
+      400
+    ]
+  },
+  "124": {
+    "name": "jade_sun/city",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "City",
+    "countryId": 10,
+    "frames": [
+      600,
+      400,
+      600
+    ]
+  },
+  "125": {
+    "name": "jade_sun/hq",
+    "defence": 4,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "HQ",
+    "countryId": 10,
+    "frames": [
+      600,
+      400,
+      600
+    ]
+  },
+  "126": {
+    "name": "jade_sun/port",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Port",
+    "countryId": 10,
+    "frames": [
+      600,
+      400,
+      600
+    ]
+  },
+  "127": {
+    "name": "amber_blossom/com_tower",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "ComTower",
+    "countryId": 9,
+    "frames": [
+      700,
+      400,
+      500
+    ]
+  },
+  "128": {
+    "name": "black_hole/com_tower",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "ComTower",
+    "countryId": 5,
+    "frames": [
+      1100,
+      400,
+      100
+    ]
+  },
+  "129": {
+    "name": "blue_moon/com_tower",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "ComTower",
+    "countryId": 2,
+    "frames": [
+      200,
+      1200,
+      200
+    ]
+  },
+  "130": {
+    "name": "brown_desert/com_tower",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "ComTower",
+    "countryId": 8,
+    "frames": [
+      800,
+      400,
+      400
+    ]
+  },
+  "131": {
+    "name": "green_earth/com_tower",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "ComTower",
+    "countryId": 3,
+    "frames": [
+      100,
+      1200,
+      300
+    ]
+  },
+  "132": {
+    "name": "jade_sun/com_tower",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "ComTower",
+    "countryId": 10,
+    "frames": [
+      600,
+      400,
+      600
+    ]
+  },
+  "133": {
+    "name": "neutral/com_tower",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "ComTower",
+    "countryId": 0,
+    "frames": []
+  },
+  "134": {
+    "name": "orange_star/com_tower",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "ComTower",
+    "countryId": 1,
+    "frames": [
+      300,
+      1200,
+      100
+    ]
+  },
+  "135": {
+    "name": "red_fire/com_tower",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "ComTower",
+    "countryId": 6,
+    "frames": [
+      1000,
+      400,
+      200
+    ]
+  },
+  "136": {
+    "name": "yellow_comet/com_tower",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "ComTower",
+    "countryId": 4,
+    "frames": [
+      1200,
+      400
+    ]
+  },
+  "137": {
+    "name": "grey_sky/com_tower",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "ComTower",
+    "countryId": 7,
+    "frames": [
+      900,
+      400,
+      300
+    ]
+  },
+  "138": {
+    "name": "amber_blossom/lab",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Lab",
+    "countryId": 9,
+    "frames": [
+      700,
+      400,
+      500
+    ]
+  },
+  "139": {
+    "name": "black_hole/lab",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Lab",
+    "countryId": 5,
+    "frames": [
+      1100,
+      400,
+      100
+    ]
+  },
+  "140": {
+    "name": "blue_moon/lab",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Lab",
+    "countryId": 2,
+    "frames": [
+      200,
+      1200,
+      200
+    ]
+  },
+  "141": {
+    "name": "brown_desert/lab",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Lab",
+    "countryId": 8,
+    "frames": [
+      800,
+      400,
+      400
+    ]
+  },
+  "142": {
+    "name": "green_earth/lab",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Lab",
+    "countryId": 3,
+    "frames": [
+      100,
+      1200,
+      300
+    ]
+  },
+  "143": {
+    "name": "grey_sky/lab",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Lab",
+    "countryId": 7,
+    "frames": [
+      900,
+      400,
+      300
+    ]
+  },
+  "144": {
+    "name": "jade_sun/lab",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Lab",
+    "countryId": 10,
+    "frames": [
+      600,
+      400,
+      600
+    ]
+  },
+  "145": {
+    "name": "neutral/lab",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Lab",
+    "countryId": 0,
+    "frames": []
+  },
+  "146": {
+    "name": "orange_star/lab",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Lab",
+    "countryId": 1,
+    "frames": [
+      300,
+      1200,
+      100
+    ]
+  },
+  "147": {
+    "name": "red_fire/lab",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Lab",
+    "countryId": 6,
+    "frames": [
+      1000,
+      400,
+      200
+    ]
+  },
+  "148": {
+    "name": "yellow_comet/lab",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Lab",
+    "countryId": 4,
+    "frames": [
+      1200,
+      400
+    ]
+  },
+  "149": {
+    "name": "cobalt_ice/airport",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Airport",
+    "countryId": 16,
+    "frames": [
+      500,
+      400,
+      700
+    ]
+  },
+  "150": {
+    "name": "cobalt_ice/base",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": 1
+    },
+    "terrain": "Base",
+    "countryId": 16,
+    "frames": [
+      400,
+      100,
+      300,
+      100,
+      300,
+      400
+    ]
+  },
+  "151": {
+    "name": "cobalt_ice/city",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "City",
+    "countryId": 16,
+    "frames": [
+      500,
+      400,
+      700
+    ]
+  },
+  "152": {
+    "name": "cobalt_ice/com_tower",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "ComTower",
+    "countryId": 16,
+    "frames": [
+      500,
+      400,
+      700
+    ]
+  },
+  "153": {
+    "name": "cobalt_ice/hq",
+    "defence": 4,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "HQ",
+    "countryId": 16,
+    "frames": [
+      500,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      700
+    ]
+  },
+  "154": {
+    "name": "cobalt_ice/lab",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Lab",
+    "countryId": 16,
+    "frames": [
+      500,
+      400,
+      700
+    ]
+  },
+  "155": {
+    "name": "cobalt_ice/port",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Port",
+    "countryId": 16,
+    "frames": [
+      500,
+      400,
+      700
+    ]
+  },
+  "156": {
+    "name": "pink_cosmos/airport",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Airport",
+    "countryId": 17,
+    "frames": [
+      400,
+      400,
+      800
+    ]
+  },
+  "157": {
+    "name": "pink_cosmos/base",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": 1
+    },
+    "terrain": "Base",
+    "countryId": 17,
+    "frames": [
+      400,
+      400,
+      400,
+      400
+    ]
+  },
+  "158": {
+    "name": "pink_cosmos/city",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "City",
+    "countryId": 17,
+    "frames": [
+      400,
+      400,
+      800
+    ]
+  },
+  "159": {
+    "name": "pink_cosmos/com_tower",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "ComTower",
+    "countryId": 17,
+    "frames": [
+      400,
+      400,
+      800
+    ]
+  },
+  "160": {
+    "name": "pink_cosmos/hq",
+    "defence": 4,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "HQ",
+    "countryId": 17,
+    "frames": [
+      400,
+      400,
+      800
+    ]
+  },
+  "161": {
+    "name": "pink_cosmos/lab",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Lab",
+    "countryId": 17,
+    "frames": [
+      400,
+      400,
+      800
+    ]
+  },
+  "162": {
+    "name": "pink_cosmos/port",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Port",
+    "countryId": 17,
+    "frames": [
+      400,
+      400,
+      800
+    ]
+  },
+  "163": {
+    "name": "teal_galaxy/airport",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Airport",
+    "countryId": 19,
+    "frames": [
+      300,
+      400,
+      900
+    ]
+  },
+  "164": {
+    "name": "teal_galaxy/base",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": 1
+    },
+    "terrain": "Base",
+    "countryId": 19,
+    "frames": [
+      300,
+      100,
+      300,
+      100,
+      400,
+      400
+    ]
+  },
+  "165": {
+    "name": "teal_galaxy/city",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "City",
+    "countryId": 19,
+    "frames": [
+      300,
+      400,
+      900
+    ]
+  },
+  "166": {
+    "name": "teal_galaxy/com_tower",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "ComTower",
+    "countryId": 19,
+    "frames": [
+      300,
+      400,
+      900
+    ]
+  },
+  "167": {
+    "name": "teal_galaxy/hq",
+    "defence": 4,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "HQ",
+    "countryId": 19,
+    "frames": [
+      300,
+      400,
+      900
+    ]
+  },
+  "168": {
+    "name": "teal_galaxy/lab",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Lab",
+    "countryId": 19,
+    "frames": [
+      300,
+      400,
+      900
+    ]
+  },
+  "169": {
+    "name": "teal_galaxy/port",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Port",
+    "countryId": 19,
+    "frames": [
+      300,
+      400,
+      900
+    ]
+  },
+  "170": {
+    "name": "purple_lightning/airport",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Airport",
+    "countryId": 20,
+    "frames": [
+      200,
+      400,
+      1000
+    ]
+  },
+  "171": {
+    "name": "purple_lightning/base",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": 1
+    },
+    "terrain": "Base",
+    "countryId": 20,
+    "frames": [
+      200,
+      200,
+      200,
+      200,
+      400,
+      400
+    ]
+  },
+  "172": {
+    "name": "purple_lightning/city",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "City",
+    "countryId": 20,
+    "frames": [
+      200,
+      400,
+      1000
+    ]
+  },
+  "173": {
+    "name": "purple_lightning/com_tower",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "ComTower",
+    "countryId": 20,
+    "frames": [
+      200,
+      400,
+      1000
+    ]
+  },
+  "174": {
+    "name": "purple_lightning/hq",
+    "defence": 4,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "HQ",
+    "countryId": 20,
+    "frames": [
+      200,
+      400,
+      1000
+    ]
+  },
+  "175": {
+    "name": "purple_lightning/lab",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Lab",
+    "countryId": 20,
+    "frames": [
+      200,
+      400,
+      1000
+    ]
+  },
+  "176": {
+    "name": "purple_lightning/port",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Port",
+    "countryId": 20,
+    "frames": [
+      200,
+      400,
+      1000
+    ]
+  },
+  "181": {
+    "name": "acid_rain/airport",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Airport",
+    "countryId": 21,
+    "frames": [
+      100,
+      400,
+      1100
+    ]
+  },
+  "182": {
+    "name": "acid_rain/base",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": 1
+    },
+    "terrain": "Base",
+    "countryId": 21,
+    "frames": [
+      100,
+      300,
+      100,
+      300,
+      400,
+      400
+    ]
+  },
+  "183": {
+    "name": "acid_rain/city",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "City",
+    "countryId": 21,
+    "frames": [
+      100,
+      400,
+      1100
+    ]
+  },
+  "184": {
+    "name": "acid_rain/com_tower",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "ComTower",
+    "countryId": 21,
+    "frames": [
+      100,
+      400,
+      1100
+    ]
+  },
+  "185": {
+    "name": "acid_rain/hq",
+    "defence": 4,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "HQ",
+    "countryId": 21,
+    "frames": [
+      100,
+      400,
+      1100
+    ]
+  },
+  "186": {
+    "name": "acid_rain/lab",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Lab",
+    "countryId": 21,
+    "frames": [
+      100,
+      400,
+      1100
+    ]
+  },
+  "187": {
+    "name": "acid_rain/port",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Port",
+    "countryId": 21,
+    "frames": [
+      100,
+      400,
+      1100
+    ]
+  },
+  "188": {
+    "name": "white_nova/airport",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Airport",
+    "countryId": 22,
+    "frames": [
+      400,
+      1200
+    ]
+  },
+  "189": {
+    "name": "white_nova/base",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": 1
+    },
+    "terrain": "Base",
+    "countryId": 22,
+    "frames": [
+      400,
+      400,
+      400,
+      400
+    ]
+  },
+  "190": {
+    "name": "white_nova/city",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "City",
+    "countryId": 22,
+    "frames": [
+      400,
+      1200
+    ]
+  },
+  "191": {
+    "name": "white_nova/com_tower",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "ComTower",
+    "countryId": 22,
+    "frames": [
+      400,
+      1200
+    ]
+  },
+  "192": {
+    "name": "white_nova/hq",
+    "defence": 4,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "HQ",
+    "countryId": 22,
+    "frames": [
+      400,
+      1200
+    ]
+  },
+  "193": {
+    "name": "white_nova/lab",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Lab",
+    "countryId": 22,
+    "frames": [
+      400,
+      1200
+    ]
+  },
+  "194": {
+    "name": "white_nova/port",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Port",
+    "countryId": 22,
+    "frames": [
+      400,
+      1200
+    ]
+  },
+  "195": {
+    "name": "teleporter",
+    "defence": 1,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 0
+    },
+    "terrain": "plain"
+  },
+  "196": {
+    "name": "azure_asteroid/airport",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Airport",
+    "countryId": 23,
+    "frames": [
+      300,
+      1200,
+      100
+    ]
+  },
+  "197": {
+    "name": "azure_asteroid/base",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": 1
+    },
+    "terrain": "Base",
+    "countryId": 23,
+    "frames": [
+      300,
+      100,
+      400,
+      400,
+      300,
+      100
+    ]
+  },
+  "198": {
+    "name": "azure_asteroid/city",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "City",
+    "countryId": 23,
+    "frames": [
+      300,
+      1200,
+      100
+    ]
+  },
+  "199": {
+    "name": "azure_asteroid/com_tower",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "ComTower",
+    "countryId": 23,
+    "frames": [
+      300,
+      1200,
+      100
+    ]
+  },
+  "200": {
+    "name": "azure_asteroid/hq",
+    "defence": 4,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "HQ",
+    "countryId": 23,
+    "frames": [
+      300,
+      1200,
+      100
+    ]
+  },
+  "201": {
+    "name": "azure_asteroid/lab",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Lab",
+    "countryId": 23,
+    "frames": [
+      300,
+      1200,
+      100
+    ]
+  },
+  "202": {
+    "name": "azure_asteroid/port",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Port",
+    "countryId": 23,
+    "frames": [
+      300,
+      1200,
+      100
+    ]
+  },
+  "203": {
+    "name": "noir_eclipse/airport",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Airport",
+    "countryId": 24,
+    "frames": [
+      300,
+      1200,
+      100
+    ]
+  },
+  "204": {
+    "name": "noir_eclipse/base",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": 1
+    },
+    "terrain": "Base",
+    "countryId": 24,
+    "frames": [
+      300,
+      100,
+      400,
+      400,
+      300,
+      100
+    ]
+  },
+  "205": {
+    "name": "noir_eclipse/city",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "City",
+    "countryId": 24,
+    "frames": [
+      300,
+      1200,
+      100
+    ]
+  },
+  "206": {
+    "name": "noir_eclipse/com_tower",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "ComTower",
+    "countryId": 24,
+    "frames": [
+      300,
+      1200,
+      100
+    ]
+  },
+  "207": {
+    "name": "noir_eclipse/hq",
+    "defence": 4,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "HQ",
+    "countryId": 24,
+    "frames": [
+      300,
+      1200,
+      100
+    ]
+  },
+  "208": {
+    "name": "noir_eclipse/lab",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Lab",
+    "countryId": 24,
+    "frames": [
+      200,
+      1200,
+      200
+    ]
+  },
+  "209": {
+    "name": "noir_eclipse/port",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Port",
+    "countryId": 24,
+    "frames": [
+      300,
+      1200,
+      100
+    ]
+  },
+  "210": {
+    "name": "silver_claw/airport",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Airport",
+    "countryId": 25,
+    "frames": [
+      1000,
+      400,
+      200
+    ]
+  },
+  "211": {
+    "name": "silver_claw/base",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": 1
+    },
+    "terrain": "Base",
+    "countryId": 25,
+    "frames": [
+      400,
+      400,
+      200,
+      200,
+      200,
+      200
+    ]
+  },
+  "212": {
+    "name": "silver_claw/city",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "City",
+    "countryId": 25,
+    "frames": [
+      1000,
+      400,
+      200
+    ]
+  },
+  "213": {
+    "name": "silver_claw/com_tower",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "ComTower",
+    "countryId": 25,
+    "frames": [
+      1000,
+      400,
+      200
+    ]
+  },
+  "214": {
+    "name": "silver_claw/hq",
+    "defence": 4,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "HQ",
+    "countryId": 25,
+    "frames": [
+      400,
+      200,
+      600,
+      200,
+      200
+    ]
+  },
+  "215": {
+    "name": "silver_claw/lab",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Lab",
+    "countryId": 25,
+    "frames": [
+      1000,
+      400,
+      200
+    ]
+  },
+  "216": {
+    "name": "silver_claw/port",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Port",
+    "countryId": 25,
+    "frames": [
+      1000,
+      400,
+      200
+    ]
+  },
+  "217": {
+    "name": "umber_wilds/airport",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Airport",
+    "countryId": 26,
+    "frames": [
+      200,
+      1200,
+      200
+    ]
+  },
+  "218": {
+    "name": "umber_wilds/base",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": 1
+    },
+    "terrain": "Base",
+    "countryId": 26,
+    "frames": [
+      200,
+      100,
+      400,
+      400,
+      300,
+      200
+    ]
+  },
+  "219": {
+    "name": "umber_wilds/city",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "City",
+    "countryId": 26,
+    "frames": [
+      200,
+      1200,
+      200
+    ]
+  },
+  "220": {
+    "name": "umber_wilds/com_tower",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "ComTower",
+    "countryId": 26,
+    "frames": [
+      200,
+      1200,
+      200
+    ]
+  },
+  "221": {
+    "name": "umber_wilds/hq",
+    "defence": 4,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "HQ",
+    "countryId": 26,
+    "frames": [
+      200,
+      300,
+      300,
+      300,
+      200,
+      100,
+      200
+    ]
+  },
+  "222": {
+    "name": "umber_wilds/lab",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Lab",
+    "countryId": 26,
+    "frames": [
+      200,
+      1200,
+      200
+    ]
+  },
+  "223": {
+    "name": "umber_wilds/port",
+    "defence": 3,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1,
+      "pipe": -1
+    },
+    "terrain": "Port",
+    "countryId": 26,
+    "frames": [
+      200,
+      1200,
+      200
+    ]
+  },
+  "1000": {
+    "name": "sea-N-E-S-W",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1001": {
+    "name": "sea-E-S-W",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1002": {
+    "name": "sea-N-S-W",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1003": {
+    "name": "sea-N-E-W",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1004": {
+    "name": "sea-N-E-S",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1005": {
+    "name": "sea-N-S",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1006": {
+    "name": "sea-E-W",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1007": {
+    "name": "sea-N-E-SW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1008": {
+    "name": "sea-N-E",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1009": {
+    "name": "sea-E-S-NW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1010": {
+    "name": "sea-E-S",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1011": {
+    "name": "sea-S-W-NE",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1012": {
+    "name": "sea-S-W",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1013": {
+    "name": "sea-N-W-SE",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1014": {
+    "name": "sea-N-W",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1015": {
+    "name": "sea-N-SE-SW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1016": {
+    "name": "sea-N-SE",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1017": {
+    "name": "sea-N-SW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1018": {
+    "name": "sea-N",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1019": {
+    "name": "sea-E-NW-SW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1020": {
+    "name": "sea-E-NW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1021": {
+    "name": "sea-E-SW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1022": {
+    "name": "sea-E",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1023": {
+    "name": "sea-S-NW-NE",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1024": {
+    "name": "sea-S-NW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1025": {
+    "name": "sea-S-NE",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1026": {
+    "name": "sea-S",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1027": {
+    "name": "sea-W-NE-SE",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1028": {
+    "name": "sea-W-NE",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1029": {
+    "name": "sea-W-SE",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1030": {
+    "name": "sea-W",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1031": {
+    "name": "sea-NW-NE-SE-SW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1032": {
+    "name": "sea-NE-SE-SW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1033": {
+    "name": "sea-NW-SE-SW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1034": {
+    "name": "sea-NW-NE-SW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1035": {
+    "name": "sea-NW-NE-SE",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1036": {
+    "name": "sea-SE-SW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1037": {
+    "name": "sea-NW-SW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1038": {
+    "name": "sea-NW-NE",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1039": {
+    "name": "sea-NE-SE",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1040": {
+    "name": "sea-NW-SE",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1041": {
+    "name": "sea-NE-SW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1042": {
+    "name": "sea-NW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1043": {
+    "name": "sea-NE",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1044": {
+    "name": "sea-SE",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1045": {
+    "name": "sea-SW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 0,
+      "heavyInfantry": 0,
+      "tread": 0,
+      "tire": 0,
+      "air": 1
+    },
+    "terrain": "sea"
+  },
+  "1046": {
+    "name": "shoal_c",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1047": {
+    "name": "shoal-AN",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1048": {
+    "name": "shoal-AE",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1049": {
+    "name": "shoal-AS",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1050": {
+    "name": "shoal-AW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1051": {
+    "name": "shoal_ne",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1052": {
+    "name": "shoal-N-AE",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1053": {
+    "name": "shoal-AN-E",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1054": {
+    "name": "shoal-AN-AE",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1055": {
+    "name": "shoal_ns",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1056": {
+    "name": "shoal-N-AS",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1057": {
+    "name": "shoal-AN-S",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1058": {
+    "name": "shoal-AN-AS",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1059": {
+    "name": "shoal_nw",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1060": {
+    "name": "shoal-N-AW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1061": {
+    "name": "shoal-AN-W",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1062": {
+    "name": "shoal-AN-AW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1063": {
+    "name": "shoal_es",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1064": {
+    "name": "shoal-E-AS",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1065": {
+    "name": "shoal-AE-S",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1066": {
+    "name": "shoal-AE-AS",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1067": {
+    "name": "shoal_ew",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1068": {
+    "name": "shoal-E-AW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1069": {
+    "name": "shoal-AE-W",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1070": {
+    "name": "shoal-AE-AW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1071": {
+    "name": "shoal_sw",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1072": {
+    "name": "shoal-S-AW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1073": {
+    "name": "shoal-AS-W",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1074": {
+    "name": "shoal-AS-AW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1075": {
+    "name": "shoal_nes",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1076": {
+    "name": "shoal-N-E-AS",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1077": {
+    "name": "shoal-N-AE-S",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1078": {
+    "name": "shoal-N-AE-AS",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1079": {
+    "name": "shoal-AN-E-S",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1080": {
+    "name": "shoal-AN-E-AS",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1081": {
+    "name": "shoal-AN-AE-S",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1082": {
+    "name": "shoal-AN-AE-AS",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1083": {
+    "name": "shoal_nsw",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1084": {
+    "name": "shoal-N-S-AW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1085": {
+    "name": "shoal-N-AS-W",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1086": {
+    "name": "shoal-N-AS-AW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1087": {
+    "name": "shoal-AN-S-W",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1088": {
+    "name": "shoal-AN-S-AW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1089": {
+    "name": "shoal-AN-AS-W",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1090": {
+    "name": "shoal-AN-AS-AW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1091": {
+    "name": "shoal_new",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1092": {
+    "name": "shoal-N-E-AW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1093": {
+    "name": "shoal-N-AE-W",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1094": {
+    "name": "shoal-N-AE-AW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1095": {
+    "name": "shoal-AN-E-W",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1096": {
+    "name": "shoal-AN-E-AW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1097": {
+    "name": "shoal-AN-AE-W",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1098": {
+    "name": "shoal-AN-AE-AW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1099": {
+    "name": "shoal_esw",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1100": {
+    "name": "shoal-E-S-AW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1101": {
+    "name": "shoal-E-AS-W",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1102": {
+    "name": "shoal-E-AS-AW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1103": {
+    "name": "shoal-AE-S-W",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1104": {
+    "name": "shoal-AE-S-AW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1105": {
+    "name": "shoal-AE-AS-W",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1106": {
+    "name": "shoal-AE-AS-AW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1107": {
+    "name": "shoal_nesw",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1108": {
+    "name": "shoal-N-E-S-AW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1109": {
+    "name": "shoal-N-E-AS-W",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1110": {
+    "name": "shoal-N-E-AS-AW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1111": {
+    "name": "shoal-N-AE-S-W",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1112": {
+    "name": "shoal-N-AE-S-AW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1113": {
+    "name": "shoal-N-AE-AS-W",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1114": {
+    "name": "shoal-N-AE-AS-AW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1115": {
+    "name": "shoal-AN-E-S-W",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1116": {
+    "name": "shoal-AN-E-S-AW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1117": {
+    "name": "shoal-AN-E-AS-W",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1118": {
+    "name": "shoal-AN-E-AS-AW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1119": {
+    "name": "shoal-AN-AE-S-W",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1120": {
+    "name": "shoal-AN-AE-S-AW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1121": {
+    "name": "shoal-AN-AE-AS-W",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  },
+  "1122": {
+    "name": "shoal-AN-AE-AS-AW",
+    "defence": 0,
+    "movementCost": {
+      "lightInfantry": 1,
+      "heavyInfantry": 1,
+      "tread": 1,
+      "tire": 1,
+      "air": 1
+    },
+    "terrain": "shoal"
+  }
+}
