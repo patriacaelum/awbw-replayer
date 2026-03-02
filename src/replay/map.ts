@@ -2,29 +2,35 @@ import { info, error } from "@tauri-apps/plugin-log";
 import { AWBWMapInfo } from "../api_client/awbw";
 
 type TileData = {
-  [key: number]: {
-    name: string;
-    defence: number;
-    sprite: HTMLImageElement | HTMLImageElement[];
-    movementCost: {
-      lightInfantry: number;
-      heavyInfantry: number;
-      tread: number;
-      tire: number;
-      air: number;
-    };
-    terrain: string;
+  [key: number]: Tile;
+}
+type Tile = {
+  name: string;
+  defence: number;
+  sprite: HTMLImageElement | HTMLImageElement[];
+  movementCost: {
+    lightInfantry: number;
+    heavyInfantry: number;
+    tread: number;
+    tire: number;
+    air: number;
   };
+  terrain: string;
 }
 
-// Preload all map textures so Vite can statically include them (dynamic import paths don't work)
+// Preload all map textures so Vite can statically include them (dynamic import
+// paths don't work)
 const TEXTURE_MODULES = import.meta.glob<string>(
   "/src/assets/textures/map/aw2/**/*.png",
   { import: "default" },
 );
 const PLAIN_TILE_ID = 1;
 const BASE_SIZE = 16;
+const MAP_PADDING = 1;
 
+/** Maps are drawn with padding of one tile around the perimeter so that the
+  * building sprites are not cut off.
+  */
 export async function drawMap(
   canvas: HTMLCanvasElement,
   mapData: AWBWMapInfo,
@@ -43,34 +49,42 @@ export async function drawMap(
 
   // Defining cell size and how to scale
   const scaleFactor = 2;
-  const cellSize = BASE_SIZE * scaleFactor;
-  canvas.width = width * cellSize;
-  canvas.height = height * cellSize;
+  canvas.width = (width + 2 * MAP_PADDING) * BASE_SIZE * scaleFactor;
+  canvas.height = (height + 2 * MAP_PADDING) * BASE_SIZE * scaleFactor;
 
-  for (let col = 0; col < width; col++) {
-    for (let row = 0; row < height; row++) {
-      const tileId = mapData["Terrain Map"][col][row];
+  for (let x = 0; x < width; x++) {
+    for (let y = 0; y < height; y++) {
+      const tileId = mapData["Terrain Map"][x][y];
       const tile = tileData[tileId];
-      let img = tile.sprite;
 
-      // NOTE: Update this for animations
-      if (Array.isArray(img)) {
-        img = img[0];
-      }
-
-      if (tile.terrain === "building") {
-        
-      }
-
-      context.drawImage(
-        img,
-        col * cellSize + cellSize - img.naturalWidth * scaleFactor,
-        row * cellSize + cellSize - img.naturalHeight * scaleFactor,
-        img.naturalWidth * scaleFactor,
-        img.naturalHeight * scaleFactor,
-      );
+      drawTile(context, tileData[PLAIN_TILE_ID], x, y, scaleFactor);
+      drawTile(context, tile, x, y, scaleFactor);
     }
   }
+}
+
+function drawTile(
+  context: CanvasRenderingContext2D,
+  tile: Tile,
+  x: number,
+  y: number,
+  scale: number = 1,
+): void {
+  const cellSize = BASE_SIZE * scale;
+  let img = tile.sprite;
+
+  if (Array.isArray(img)) {
+    img = img[0];
+  }
+
+  // x = padding + grid_x + (cellWidth - imageWidth)
+  context.drawImage(
+    img,
+    MAP_PADDING * cellSize + x * cellSize + (cellSize - img.naturalWidth * scale),
+    MAP_PADDING * cellSize + y * cellSize + (cellSize - img.naturalHeight * scale),
+    img.naturalWidth * scale,
+    img.naturalHeight * scale,
+  );
 }
 
 function getTextureLoader(name: string): (() => Promise<string>) | null {
