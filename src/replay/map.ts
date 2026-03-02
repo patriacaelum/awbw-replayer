@@ -4,18 +4,18 @@ import { AWBWMapInfo } from "../api_client/awbw";
 type TileData = {
   [key: number]: Tile;
 }
-type Tile = {
+export type Tile = {
   name: string;
-  defence: number;
+  defence?: number;
   sprite: HTMLImageElement | HTMLImageElement[];
-  movementCost: {
-    lightInfantry: number;
-    heavyInfantry: number;
-    tread: number;
-    tire: number;
-    air: number;
+  movementCost?: {
+    lightInfantry?: number;
+    heavyInfantry?: number;
+    tread?: number;
+    tire?: number;
+    air?: number;
   };
-  terrain: string;
+  terrain?: string;
 }
 
 // Preload all map textures so Vite can statically include them (dynamic import
@@ -25,8 +25,10 @@ const TEXTURE_MODULES = import.meta.glob<string>(
   { import: "default" },
 );
 const PLAIN_TILE_ID = 1;
-const BASE_SIZE = 16;
-const MAP_PADDING = 1;
+export const BASE_SIZE = 16;
+export const MAP_PADDING = 1;
+export const scaleFactor = 2;
+export const cellSize = BASE_SIZE * scaleFactor;
 
 /** Maps are drawn with padding of one tile around the perimeter so that the
   * building sprites are not cut off.
@@ -34,7 +36,7 @@ const MAP_PADDING = 1;
 export async function drawMap(
   canvas: HTMLCanvasElement,
   mapData: AWBWMapInfo,
-): Promise<void> {
+): Promise<{ tileData: TileData; mapWidth: number; mapHeight: number }> {
   const context = canvas.getContext("2d");
 
   if (!context) {
@@ -47,20 +49,54 @@ export async function drawMap(
   const width = mapData["Size X"];
   const height = mapData["Size Y"];
 
-  // Defining cell size and how to scale
-  const scaleFactor = 2;
-  canvas.width = (width + 2 * MAP_PADDING) * BASE_SIZE * scaleFactor;
-  canvas.height = (height + 2 * MAP_PADDING) * BASE_SIZE * scaleFactor;
+  canvas.width = (width + 2 * MAP_PADDING) * cellSize;
+  canvas.height = (height + 2 * MAP_PADDING) * cellSize;
 
   for (let x = 0; x < width; x++) {
     for (let y = 0; y < height; y++) {
       const tileId = mapData["Terrain Map"][x][y];
       const tile = tileData[tileId];
 
-      drawTile(context, tileData[PLAIN_TILE_ID], x, y, scaleFactor);
-      drawTile(context, tile, x, y, scaleFactor);
+      drawTile(context, tileData[PLAIN_TILE_ID], x, y);
+      drawTile(context, tile, x, y);
     }
   }
+
+  return { tileData, mapWidth: width, mapHeight: height };
+}
+
+/** Convert canvas-relative pixel coords to grid cell. Returns null if outside map. */
+export function canvasToGrid(
+  offsetX: number,
+  offsetY: number,
+  mapWidth: number,
+  mapHeight: number,
+): { gx: number; gy: number } | null {
+  const gx = Math.floor((offsetX - MAP_PADDING * cellSize) / cellSize);
+  const gy = Math.floor((offsetY - MAP_PADDING * cellSize) / cellSize);
+  if (gx < 0 || gx >= mapWidth || gy < 0 || gy >= mapHeight) return null;
+  return { gx, gy };
+}
+
+/** Draw a tile at a grid position (for overlay/cursor).
+  */
+export function drawTileAtGrid(
+  context: CanvasRenderingContext2D,
+  tile: Tile,
+  gx: number,
+  gy: number,
+): void {
+  let img = tile.sprite;
+  if (Array.isArray(img)) img = img[0];
+  context.save();
+  context.drawImage(
+    img,
+    MAP_PADDING * cellSize + gx * cellSize + (cellSize - img.naturalWidth * scaleFactor) / 2,
+    MAP_PADDING * cellSize + gy * cellSize + (cellSize - img.naturalHeight * scaleFactor) / 2,
+    img.naturalWidth * scaleFactor,
+    img.naturalHeight * scaleFactor,
+  );
+  context.restore();
 }
 
 function drawTile(
@@ -68,9 +104,7 @@ function drawTile(
   tile: Tile,
   x: number,
   y: number,
-  scale: number = 1,
 ): void {
-  const cellSize = BASE_SIZE * scale;
   let img = tile.sprite;
 
   if (Array.isArray(img)) {
@@ -80,10 +114,10 @@ function drawTile(
   // x = padding + grid_x + (cellWidth - imageWidth)
   context.drawImage(
     img,
-    MAP_PADDING * cellSize + x * cellSize + (cellSize - img.naturalWidth * scale),
-    MAP_PADDING * cellSize + y * cellSize + (cellSize - img.naturalHeight * scale),
-    img.naturalWidth * scale,
-    img.naturalHeight * scale,
+    MAP_PADDING * cellSize + x * cellSize + (cellSize - img.naturalWidth * scaleFactor),
+    MAP_PADDING * cellSize + y * cellSize + (cellSize - img.naturalHeight * scaleFactor),
+    img.naturalWidth * scaleFactor,
+    img.naturalHeight * scaleFactor,
   );
 }
 

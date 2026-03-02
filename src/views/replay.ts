@@ -1,10 +1,11 @@
 import Alpine from "alpinejs";
 import { info } from "@tauri-apps/plugin-log";
 
+import cursorFile from "/src/assets/textures/ui/cursor.png";
 import { openFile, pathExists, saveFile } from "../fileIO";
 import { AWBWAPIClient, AWBWMapInfo } from "../api_client/awbw";
 import { ReplayParser } from "../replay/parser";
-import { drawMap } from "../replay/map";
+import { drawMap, canvasToGrid, drawTileAtGrid, cellSize, Tile } from "../replay/map";
 
 if (document.readyState === "loading") {
   window.addEventListener("DOMContentLoaded", setup);
@@ -65,7 +66,6 @@ async function loadMapFile(mapId: number) {
   const tiles = mapData["Terrain Map"];
   const distinctTiles = [...new Set(tiles.flat())].sort();
   info(`Distinct tile values (${distinctTiles.length}): ${distinctTiles.join(", ")}`);
-  const cellSize = 32;
 
   info(`Successfully loaded map ${mapId}`);
   Alpine.store("mapName", mapData.Name);
@@ -73,7 +73,47 @@ async function loadMapFile(mapId: number) {
   Alpine.store("mapSize", { x: sizeX, y: sizeY });
   Alpine.store("cellSize", cellSize);
 
-
   const canvas = document.getElementById("map-grid") as HTMLCanvasElement;
-  await drawMap(canvas, mapData);
+  const overlay = document.getElementById("map-overlay") as HTMLCanvasElement;
+  const { tileData, mapWidth, mapHeight } = await drawMap(canvas, mapData);
+
+  overlay.width = canvas.width;
+  overlay.height = canvas.height;
+
+  const plainTile = tileData[1];
+  if (!plainTile) {
+    return;
+  }
+
+  const ctxOrNull = overlay.getContext("2d");
+  if (!ctxOrNull) {
+    return;
+  }
+
+  const overlayCtx: CanvasRenderingContext2D = ctxOrNull;
+  const cursorImage = new Image();
+  cursorImage.src = cursorFile;
+  const cursorTile: Tile = {
+    name: "cursor",
+    sprite: cursorImage,
+  };
+  canvas.addEventListener("mousemove", (e) => {
+    const rect = canvas.getBoundingClientRect();
+    const scaleX = canvas.width / rect.width;
+    const scaleY = canvas.height / rect.height;
+    const offsetX = (e.clientX - rect.left) * scaleX;
+    const offsetY = (e.clientY - rect.top) * scaleY;
+
+    const cell = canvasToGrid(offsetX, offsetY, mapWidth, mapHeight);
+    if (cell) {
+      overlayCtx.clearRect(0, 0, overlay.width, overlay.height);
+      drawTileAtGrid(overlayCtx, cursorTile, cell.gx, cell.gy);
+    } else {
+      overlayCtx.clearRect(0, 0, overlay.width, overlay.height);
+    }
+  });
+
+  canvas.addEventListener("mouseleave", () => {
+    overlayCtx.clearRect(0, 0, overlay.width, overlay.height);
+  });
 }
