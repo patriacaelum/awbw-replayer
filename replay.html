@@ -8,30 +8,59 @@
     <script src="/src/static/oat.min.js" defer></script>
     <script type="module" src="/src/views/replay.ts" defer></script>
   </head>
+
   <body x-data="">
-    <h1 x-show="$store.replayId">
-      Loading replay <span x-text="$store.replayId"></span>...
-    </h1>
-    <h2 x-show="$store.mapId && !$store.mapSize">
-      Loading map <span x-text="$store.mapId"></span>...
-    </h2>
-    <h2 x-text="$store.mapLoadingError" x-show="$store.mapLoadingError"></h2>
-
-    <div
-      id="map-info"
-      x-show="$store.mapName && $store.mapAuthor"
-      style="text-align: center;"
-    >
-      <h2>
-        Map: <span x-text="$store.mapName"></span>
+    <main>
+      <h1 x-show="$store.replayId">
+        Loading replay <span x-text="$store.replayId"></span>...
+      </h1>
+      <h2 x-show="$store.mapId && !$store.mapSize">
+        Loading map <span x-text="$store.mapId"></span>...
       </h2>
-      <h3>
-        by <span x-text="$store.mapAuthor"></span>
-      </h3>
-    </div> <!-- map-info -->
+      <h2 x-text="$store.mapLoadingError" x-show="$store.mapLoadingError"></h2>
 
-    <div id="game-section" x-show="$store.mapSize">
-      <canvas id="map-grid" style="display: block; margin: auto;"></canvas>
-    </div> <!-- game-section -->
+      <div
+        id="map-info"
+        x-show="$store.mapName && $store.mapAuthor"
+        style="text-align: center;"
+      >
+        <h2>
+          Map: <span x-text="$store.mapName"></span>
+        </h2>
+        <h3>
+          by <span x-text="$store.mapAuthor"></span>
+        </h3>
+      </div> <!-- map-info -->
+
+      <div id="game-section" x-show="$store.mapSize" style="text-align: center;">
+        <article class="card">
+          <ot-dropdown>
+            <button popovertarget="scale-menu" class="outline">
+              Scale <span x-text="$store.scaleFactor + '×'"></span>
+              <svg
+                width="16"
+                height="16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                >
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </button>
+            <menu popover id="scale-menu">
+              <button role="menuitem" data-scale="1" @click="$store.scaleFactor = +$el.dataset.scale; $el.closest('menu').hidePopover(); window.__redrawMap?.()">1×</button>
+              <button role="menuitem" data-scale="2" @click="$store.scaleFactor = +$el.dataset.scale; $el.closest('menu').hidePopover(); window.__redrawMap?.()">2×</button>
+              <button role="menuitem" data-scale="3" @click="$store.scaleFactor = +$el.dataset.scale; $el.closest('menu').hidePopover(); window.__redrawMap?.()">3×</button>
+              <button role="menuitem" data-scale="4" @click="$store.scaleFactor = +$el.dataset.scale; $el.closest('menu').hidePopover(); window.__redrawMap?.()">4×</button>
+            </menu>
+          </ot-dropdown>
+        </article>
+        <div id="map-container" style="position: relative; display: inline-block;">
+          <canvas id="map-grid"></canvas>
+          <canvas id="map-overlay" style="position: absolute; left: 0; top: 0; pointer-events: none;"></canvas>
+        </div> <!-- map-container -->
+      </div> <!-- game-section -->
+    </main>
   </body>
 </html>

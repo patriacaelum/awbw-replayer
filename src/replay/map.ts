@@ -27,16 +27,21 @@ const TEXTURE_MODULES = import.meta.glob<string>(
 const PLAIN_TILE_ID = 1;
 export const BASE_SIZE = 16;
 export const MAP_PADDING = 1;
-export const scaleFactor = 2;
-export const cellSize = BASE_SIZE * scaleFactor;
 
 /** Maps are drawn with padding of one tile around the perimeter so that the
   * building sprites are not cut off.
+  * @param scaleFactor - Scale factor for tile size (default 2). Cell size = BASE_SIZE * scaleFactor.
   */
 export async function drawMap(
   canvas: HTMLCanvasElement,
   mapData: AWBWMapInfo,
-): Promise<{ tileData: TileData; mapWidth: number; mapHeight: number }> {
+  scaleFactor: number = 2,
+): Promise<{
+  tileData: TileData;
+  mapWidth: number;
+  mapHeight: number;
+  scaleFactor: number;
+}> {
   const context = canvas.getContext("2d");
 
   if (!context) {
@@ -48,6 +53,7 @@ export async function drawMap(
   // Number of cells
   const width = mapData["Size X"];
   const height = mapData["Size Y"];
+  const cellSize = BASE_SIZE * scaleFactor;
 
   canvas.width = (width + 2 * MAP_PADDING) * cellSize;
   canvas.height = (height + 2 * MAP_PADDING) * cellSize;
@@ -57,12 +63,12 @@ export async function drawMap(
       const tileId = mapData["Terrain Map"][x][y];
       const tile = tileData[tileId];
 
-      drawTile(context, tileData[PLAIN_TILE_ID], x, y);
-      drawTile(context, tile, x, y);
+      drawTile(context, tileData[PLAIN_TILE_ID], x, y, scaleFactor);
+      drawTile(context, tile, x, y, scaleFactor);
     }
   }
 
-  return { tileData, mapWidth: width, mapHeight: height };
+  return { tileData, mapWidth: width, mapHeight: height, scaleFactor };
 }
 
 /** Convert canvas-relative pixel coords to grid cell. Returns null if outside map. */
@@ -71,21 +77,24 @@ export function canvasToGrid(
   offsetY: number,
   mapWidth: number,
   mapHeight: number,
+  scaleFactor: number,
 ): { gx: number; gy: number } | null {
+  const cellSize = BASE_SIZE * scaleFactor;
   const gx = Math.floor((offsetX - MAP_PADDING * cellSize) / cellSize);
   const gy = Math.floor((offsetY - MAP_PADDING * cellSize) / cellSize);
   if (gx < 0 || gx >= mapWidth || gy < 0 || gy >= mapHeight) return null;
   return { gx, gy };
 }
 
-/** Draw a tile at a grid position (for overlay/cursor).
-  */
+/** Draw a tile at a grid position (for overlay/cursor). Use same scaleFactor as drawMap. */
 export function drawTileAtGrid(
   context: CanvasRenderingContext2D,
   tile: Tile,
   gx: number,
   gy: number,
+  scaleFactor: number,
 ): void {
+  const cellSize = BASE_SIZE * scaleFactor;
   let img = tile.sprite;
   if (Array.isArray(img)) img = img[0];
   context.save();
@@ -104,7 +113,9 @@ function drawTile(
   tile: Tile,
   x: number,
   y: number,
+  scaleFactor: number,
 ): void {
+  const cellSize = BASE_SIZE * scaleFactor;
   let img = tile.sprite;
 
   if (Array.isArray(img)) {
