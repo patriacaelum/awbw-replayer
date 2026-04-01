@@ -309,7 +309,7 @@
       "tire": 1,
       "air": 1
     },
-    "terrain": "road"
+    "terrain": "bridge"
   },
   "27": {
     "name": "bridge_ns",
@@ -321,10 +321,10 @@
       "tire": 1,
       "air": 1
     },
-    "terrain": "road"
+    "terrain": "bridge"
   },
   "28": {
-    "name": "sea",
+    "name": "sea_cccccccc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -336,7 +336,7 @@
     "terrain": "sea"
   },
   "29": {
-    "name": "shoal_n",
+    "name": "shoal_lsss",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -348,7 +348,7 @@
     "terrain": "shoal"
   },
   "30": {
-    "name": "shoal_s",
+    "name": "shoal_ssls",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -360,7 +360,7 @@
     "terrain": "shoal"
   },
   "31": {
-    "name": "shoal_e",
+    "name": "shoal_slss",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -372,7 +372,7 @@
     "terrain": "shoal"
   },
   "32": {
-    "name": "shoal_w",
+    "name": "shoal_sssl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -3433,7 +3433,7 @@
     ]
   },
   "1000": {
-    "name": "sea-N-E-S-W",
+    "name": "sea_llllllll",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3445,7 +3445,7 @@
     "terrain": "sea"
   },
   "1001": {
-    "name": "sea-E-S-W",
+    "name": "sea_clllllll",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3457,7 +3457,7 @@
     "terrain": "sea"
   },
   "1002": {
-    "name": "sea-N-S-W",
+    "name": "sea_llclllll",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3469,7 +3469,7 @@
     "terrain": "sea"
   },
   "1003": {
-    "name": "sea-N-E-W",
+    "name": "sea_llllclll",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3481,7 +3481,7 @@
     "terrain": "sea"
   },
   "1004": {
-    "name": "sea-N-E-S",
+    "name": "sea_llllllcl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3493,7 +3493,7 @@
     "terrain": "sea"
   },
   "1005": {
-    "name": "sea-N-S",
+    "name": "sea_llclllcl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3505,7 +3505,7 @@
     "terrain": "sea"
   },
   "1006": {
-    "name": "sea-E-W",
+    "name": "sea_clllclll",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3517,7 +3517,7 @@
     "terrain": "sea"
   },
   "1007": {
-    "name": "sea-N-E-SW",
+    "name": "sea_llllclcl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3529,7 +3529,7 @@
     "terrain": "sea"
   },
   "1008": {
-    "name": "sea-N-E",
+    "name": "sea_llllcccl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3541,7 +3541,7 @@
     "terrain": "sea"
   },
   "1009": {
-    "name": "sea-E-S-NW",
+    "name": "sea_clllllcl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3553,7 +3553,7 @@
     "terrain": "sea"
   },
   "1010": {
-    "name": "sea-E-S",
+    "name": "sea_clllllcc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3565,7 +3565,7 @@
     "terrain": "sea"
   },
   "1011": {
-    "name": "sea-S-W-NE",
+    "name": "sea_clclllll",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3577,7 +3577,7 @@
     "terrain": "sea"
   },
   "1012": {
-    "name": "sea-S-W",
+    "name": "sea_ccclllll",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3589,7 +3589,7 @@
     "terrain": "sea"
   },
   "1013": {
-    "name": "sea-N-W-SE",
+    "name": "sea_llclclll",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3601,7 +3601,7 @@
     "terrain": "sea"
   },
   "1014": {
-    "name": "sea-N-W",
+    "name": "sea_llccclll",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3613,7 +3613,7 @@
     "terrain": "sea"
   },
   "1015": {
-    "name": "sea-N-SE-SW",
+    "name": "sea_llclclcl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3625,7 +3625,7 @@
     "terrain": "sea"
   },
   "1016": {
-    "name": "sea-N-SE",
+    "name": "sea_llclcccl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3637,7 +3637,7 @@
     "terrain": "sea"
   },
   "1017": {
-    "name": "sea-N-SW",
+    "name": "sea_llccclcl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3649,7 +3649,7 @@
     "terrain": "sea"
   },
   "1018": {
-    "name": "sea-N",
+    "name": "sea_llcccccl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3661,7 +3661,7 @@
     "terrain": "sea"
   },
   "1019": {
-    "name": "sea-E-NW-SW",
+    "name": "sea_clllclcl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3673,7 +3673,7 @@
     "terrain": "sea"
   },
   "1020": {
-    "name": "sea-E-NW",
+    "name": "sea_clllcccl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3685,7 +3685,7 @@
     "terrain": "sea"
   },
   "1021": {
-    "name": "sea-E-SW",
+    "name": "sea_clllclcc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3697,7 +3697,7 @@
     "terrain": "sea"
   },
   "1022": {
-    "name": "sea-E",
+    "name": "sea_clllcccc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3709,7 +3709,7 @@
     "terrain": "sea"
   },
   "1023": {
-    "name": "sea-S-NW-NE",
+    "name": "sea_clclllcl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3721,7 +3721,7 @@
     "terrain": "sea"
   },
   "1024": {
-    "name": "sea-S-NW",
+    "name": "sea_ccclllcl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3733,7 +3733,7 @@
     "terrain": "sea"
   },
   "1025": {
-    "name": "sea-S-NE",
+    "name": "sea_clclllcc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3745,7 +3745,7 @@
     "terrain": "sea"
   },
   "1026": {
-    "name": "sea-S",
+    "name": "sea_ccclllcc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3757,7 +3757,7 @@
     "terrain": "sea"
   },
   "1027": {
-    "name": "sea-W-NE-SE",
+    "name": "sea_clclclll",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3769,7 +3769,7 @@
     "terrain": "sea"
   },
   "1028": {
-    "name": "sea-W-NE",
+    "name": "sea_clccclll",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3781,7 +3781,7 @@
     "terrain": "sea"
   },
   "1029": {
-    "name": "sea-W-SE",
+    "name": "sea_ccclclll",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3793,7 +3793,7 @@
     "terrain": "sea"
   },
   "1030": {
-    "name": "sea-W",
+    "name": "sea_ccccclll",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3805,7 +3805,7 @@
     "terrain": "sea"
   },
   "1031": {
-    "name": "sea-NW-NE-SE-SW",
+    "name": "sea_clclclcl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3817,7 +3817,7 @@
     "terrain": "sea"
   },
   "1032": {
-    "name": "sea-NE-SE-SW",
+    "name": "sea_clclclcc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3829,7 +3829,7 @@
     "terrain": "sea"
   },
   "1033": {
-    "name": "sea-NW-SE-SW",
+    "name": "sea_ccclclcl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3841,7 +3841,7 @@
     "terrain": "sea"
   },
   "1034": {
-    "name": "sea-NW-NE-SW",
+    "name": "sea_clccclcl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3853,7 +3853,7 @@
     "terrain": "sea"
   },
   "1035": {
-    "name": "sea-NW-NE-SE",
+    "name": "sea_clclcccl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3865,7 +3865,7 @@
     "terrain": "sea"
   },
   "1036": {
-    "name": "sea-SE-SW",
+    "name": "sea_ccclclcc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3877,7 +3877,7 @@
     "terrain": "sea"
   },
   "1037": {
-    "name": "sea-NW-SW",
+    "name": "sea_ccccclcl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3889,7 +3889,7 @@
     "terrain": "sea"
   },
   "1038": {
-    "name": "sea-NW-NE",
+    "name": "sea_clcccccl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3901,7 +3901,7 @@
     "terrain": "sea"
   },
   "1039": {
-    "name": "sea-NE-SE",
+    "name": "sea_clclcccc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3913,7 +3913,7 @@
     "terrain": "sea"
   },
   "1040": {
-    "name": "sea-NW-SE",
+    "name": "sea_ccclcccl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3925,7 +3925,7 @@
     "terrain": "sea"
   },
   "1041": {
-    "name": "sea-NE-SW",
+    "name": "sea_clccclcc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3937,7 +3937,7 @@
     "terrain": "sea"
   },
   "1042": {
-    "name": "sea-NW",
+    "name": "sea_cccccccl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3949,7 +3949,7 @@
     "terrain": "sea"
   },
   "1043": {
-    "name": "sea-NE",
+    "name": "sea_clcccccc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3961,7 +3961,7 @@
     "terrain": "sea"
   },
   "1044": {
-    "name": "sea-SE",
+    "name": "sea_ccclcccc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3973,7 +3973,7 @@
     "terrain": "sea"
   },
   "1045": {
-    "name": "sea-SW",
+    "name": "sea_ccccclcc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 0,
@@ -3985,7 +3985,7 @@
     "terrain": "sea"
   },
   "1046": {
-    "name": "shoal_c",
+    "name": "shoal_llll",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -3997,7 +3997,7 @@
     "terrain": "shoal"
   },
   "1047": {
-    "name": "shoal-AN",
+    "name": "shoal_csss",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4009,7 +4009,7 @@
     "terrain": "shoal"
   },
   "1048": {
-    "name": "shoal-AE",
+    "name": "shoal_scss",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4021,7 +4021,7 @@
     "terrain": "shoal"
   },
   "1049": {
-    "name": "shoal-AS",
+    "name": "shoal_sscs",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4033,7 +4033,7 @@
     "terrain": "shoal"
   },
   "1050": {
-    "name": "shoal-AW",
+    "name": "shoal_sssc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4045,7 +4045,7 @@
     "terrain": "shoal"
   },
   "1051": {
-    "name": "shoal_ne",
+    "name": "shoal_llss",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4057,7 +4057,7 @@
     "terrain": "shoal"
   },
   "1052": {
-    "name": "shoal-N-AE",
+    "name": "shoal_lcss",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4069,7 +4069,7 @@
     "terrain": "shoal"
   },
   "1053": {
-    "name": "shoal-AN-E",
+    "name": "shoal_clss",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4081,7 +4081,7 @@
     "terrain": "shoal"
   },
   "1054": {
-    "name": "shoal-AN-AE",
+    "name": "shoal_ccss",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4093,7 +4093,7 @@
     "terrain": "shoal"
   },
   "1055": {
-    "name": "shoal_ns",
+    "name": "shoal_lsls",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4105,7 +4105,7 @@
     "terrain": "shoal"
   },
   "1056": {
-    "name": "shoal-N-AS",
+    "name": "shoal_lscs",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4117,7 +4117,7 @@
     "terrain": "shoal"
   },
   "1057": {
-    "name": "shoal-AN-S",
+    "name": "shoal_csls",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4129,7 +4129,7 @@
     "terrain": "shoal"
   },
   "1058": {
-    "name": "shoal-AN-AS",
+    "name": "shoal_cscs",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4141,7 +4141,7 @@
     "terrain": "shoal"
   },
   "1059": {
-    "name": "shoal_nw",
+    "name": "shoal_lssl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4153,7 +4153,7 @@
     "terrain": "shoal"
   },
   "1060": {
-    "name": "shoal-N-AW",
+    "name": "shoal_lssc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4165,7 +4165,7 @@
     "terrain": "shoal"
   },
   "1061": {
-    "name": "shoal-AN-W",
+    "name": "shoal_cssl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4177,7 +4177,7 @@
     "terrain": "shoal"
   },
   "1062": {
-    "name": "shoal-AN-AW",
+    "name": "shoal_cssc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4189,7 +4189,7 @@
     "terrain": "shoal"
   },
   "1063": {
-    "name": "shoal_es",
+    "name": "shoal_slls",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4201,7 +4201,7 @@
     "terrain": "shoal"
   },
   "1064": {
-    "name": "shoal-E-AS",
+    "name": "shoal_slcs",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4213,7 +4213,7 @@
     "terrain": "shoal"
   },
   "1065": {
-    "name": "shoal-AE-S",
+    "name": "shoal_scls",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4225,7 +4225,7 @@
     "terrain": "shoal"
   },
   "1066": {
-    "name": "shoal-AE-AS",
+    "name": "shoal_sccs",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4237,7 +4237,7 @@
     "terrain": "shoal"
   },
   "1067": {
-    "name": "shoal_ew",
+    "name": "shoal_slsl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4249,7 +4249,7 @@
     "terrain": "shoal"
   },
   "1068": {
-    "name": "shoal-E-AW",
+    "name": "shoal_slsc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4261,7 +4261,7 @@
     "terrain": "shoal"
   },
   "1069": {
-    "name": "shoal-AE-W",
+    "name": "shoal_scsl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4273,7 +4273,7 @@
     "terrain": "shoal"
   },
   "1070": {
-    "name": "shoal-AE-AW",
+    "name": "shoal_scsc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4285,7 +4285,7 @@
     "terrain": "shoal"
   },
   "1071": {
-    "name": "shoal_sw",
+    "name": "shoal_ssll",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4297,7 +4297,7 @@
     "terrain": "shoal"
   },
   "1072": {
-    "name": "shoal-S-AW",
+    "name": "shoal_sslc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4309,7 +4309,7 @@
     "terrain": "shoal"
   },
   "1073": {
-    "name": "shoal-AS-W",
+    "name": "shoal_sscl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4321,7 +4321,7 @@
     "terrain": "shoal"
   },
   "1074": {
-    "name": "shoal-AS-AW",
+    "name": "shoal_sscc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4333,7 +4333,7 @@
     "terrain": "shoal"
   },
   "1075": {
-    "name": "shoal_nes",
+    "name": "shoal_llls",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4345,7 +4345,7 @@
     "terrain": "shoal"
   },
   "1076": {
-    "name": "shoal-N-E-AS",
+    "name": "shoal_llcs",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4357,7 +4357,7 @@
     "terrain": "shoal"
   },
   "1077": {
-    "name": "shoal-N-AE-S",
+    "name": "shoal_lcls",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4369,7 +4369,7 @@
     "terrain": "shoal"
   },
   "1078": {
-    "name": "shoal-N-AE-AS",
+    "name": "shoal_lccs",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4381,7 +4381,7 @@
     "terrain": "shoal"
   },
   "1079": {
-    "name": "shoal-AN-E-S",
+    "name": "shoal_clls",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4393,7 +4393,7 @@
     "terrain": "shoal"
   },
   "1080": {
-    "name": "shoal-AN-E-AS",
+    "name": "shoal_clcs",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4405,7 +4405,7 @@
     "terrain": "shoal"
   },
   "1081": {
-    "name": "shoal-AN-AE-S",
+    "name": "shoal_ccls",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4417,7 +4417,7 @@
     "terrain": "shoal"
   },
   "1082": {
-    "name": "shoal-AN-AE-AS",
+    "name": "shoal_cccs",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4429,7 +4429,7 @@
     "terrain": "shoal"
   },
   "1083": {
-    "name": "shoal_nsw",
+    "name": "shoal_lsll",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4441,7 +4441,7 @@
     "terrain": "shoal"
   },
   "1084": {
-    "name": "shoal-N-S-AW",
+    "name": "shoal_lslc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4453,7 +4453,7 @@
     "terrain": "shoal"
   },
   "1085": {
-    "name": "shoal-N-AS-W",
+    "name": "shoal_lscl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4465,7 +4465,7 @@
     "terrain": "shoal"
   },
   "1086": {
-    "name": "shoal-N-AS-AW",
+    "name": "shoal_lscc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4477,7 +4477,7 @@
     "terrain": "shoal"
   },
   "1087": {
-    "name": "shoal-AN-S-W",
+    "name": "shoal_csll",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4489,7 +4489,7 @@
     "terrain": "shoal"
   },
   "1088": {
-    "name": "shoal-AN-S-AW",
+    "name": "shoal_cslc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4501,7 +4501,7 @@
     "terrain": "shoal"
   },
   "1089": {
-    "name": "shoal-AN-AS-W",
+    "name": "shoal_cscl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4513,7 +4513,7 @@
     "terrain": "shoal"
   },
   "1090": {
-    "name": "shoal-AN-AS-AW",
+    "name": "shoal_cscc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4525,7 +4525,7 @@
     "terrain": "shoal"
   },
   "1091": {
-    "name": "shoal_new",
+    "name": "shoal_llsl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4537,7 +4537,7 @@
     "terrain": "shoal"
   },
   "1092": {
-    "name": "shoal-N-E-AW",
+    "name": "shoal_llsc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4549,7 +4549,7 @@
     "terrain": "shoal"
   },
   "1093": {
-    "name": "shoal-N-AE-W",
+    "name": "shoal_lcsl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4561,7 +4561,7 @@
     "terrain": "shoal"
   },
   "1094": {
-    "name": "shoal-N-AE-AW",
+    "name": "shoal_lcsc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4573,7 +4573,7 @@
     "terrain": "shoal"
   },
   "1095": {
-    "name": "shoal-AN-E-W",
+    "name": "shoal_clsl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4585,7 +4585,7 @@
     "terrain": "shoal"
   },
   "1096": {
-    "name": "shoal-AN-E-AW",
+    "name": "shoal_clsc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4597,7 +4597,7 @@
     "terrain": "shoal"
   },
   "1097": {
-    "name": "shoal-AN-AE-W",
+    "name": "shoal_ccsl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4609,7 +4609,7 @@
     "terrain": "shoal"
   },
   "1098": {
-    "name": "shoal-AN-AE-AW",
+    "name": "shoal_ccsc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4621,7 +4621,7 @@
     "terrain": "shoal"
   },
   "1099": {
-    "name": "shoal_esw",
+    "name": "shoal_slll",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4633,7 +4633,7 @@
     "terrain": "shoal"
   },
   "1100": {
-    "name": "shoal-E-S-AW",
+    "name": "shoal_sllc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4645,7 +4645,7 @@
     "terrain": "shoal"
   },
   "1101": {
-    "name": "shoal-E-AS-W",
+    "name": "shoal_slcl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4657,7 +4657,7 @@
     "terrain": "shoal"
   },
   "1102": {
-    "name": "shoal-E-AS-AW",
+    "name": "shoal_slcc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4669,7 +4669,7 @@
     "terrain": "shoal"
   },
   "1103": {
-    "name": "shoal-AE-S-W",
+    "name": "shoal_scll",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4681,7 +4681,7 @@
     "terrain": "shoal"
   },
   "1104": {
-    "name": "shoal-AE-S-AW",
+    "name": "shoal_sclc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4693,7 +4693,7 @@
     "terrain": "shoal"
   },
   "1105": {
-    "name": "shoal-AE-AS-W",
+    "name": "shoal_sccl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4705,7 +4705,7 @@
     "terrain": "shoal"
   },
   "1106": {
-    "name": "shoal-AE-AS-AW",
+    "name": "shoal_sccc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4717,7 +4717,7 @@
     "terrain": "shoal"
   },
   "1107": {
-    "name": "shoal_nesw",
+    "name": "shoal_llll",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4729,7 +4729,7 @@
     "terrain": "shoal"
   },
   "1108": {
-    "name": "shoal-N-E-S-AW",
+    "name": "shoal_lllc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4741,7 +4741,7 @@
     "terrain": "shoal"
   },
   "1109": {
-    "name": "shoal-N-E-AS-W",
+    "name": "shoal_llcl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4753,7 +4753,7 @@
     "terrain": "shoal"
   },
   "1110": {
-    "name": "shoal-N-E-AS-AW",
+    "name": "shoal_llcc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4765,7 +4765,7 @@
     "terrain": "shoal"
   },
   "1111": {
-    "name": "shoal-N-AE-S-W",
+    "name": "shoal_lcll",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4777,7 +4777,7 @@
     "terrain": "shoal"
   },
   "1112": {
-    "name": "shoal-N-AE-S-AW",
+    "name": "shoal_lclc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4789,7 +4789,7 @@
     "terrain": "shoal"
   },
   "1113": {
-    "name": "shoal-N-AE-AS-W",
+    "name": "shoal_lccl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4801,7 +4801,7 @@
     "terrain": "shoal"
   },
   "1114": {
-    "name": "shoal-N-AE-AS-AW",
+    "name": "shoal_lccc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4813,7 +4813,7 @@
     "terrain": "shoal"
   },
   "1115": {
-    "name": "shoal-AN-E-S-W",
+    "name": "shoal_clll",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4825,7 +4825,7 @@
     "terrain": "shoal"
   },
   "1116": {
-    "name": "shoal-AN-E-S-AW",
+    "name": "shoal_cllc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4837,7 +4837,7 @@
     "terrain": "shoal"
   },
   "1117": {
-    "name": "shoal-AN-E-AS-W",
+    "name": "shoal_clcl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4849,7 +4849,7 @@
     "terrain": "shoal"
   },
   "1118": {
-    "name": "shoal-AN-E-AS-AW",
+    "name": "shoal_clcc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4861,7 +4861,7 @@
     "terrain": "shoal"
   },
   "1119": {
-    "name": "shoal-AN-AE-S-W",
+    "name": "shoal_ccll",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4873,7 +4873,7 @@
     "terrain": "shoal"
   },
   "1120": {
-    "name": "shoal-AN-AE-S-AW",
+    "name": "shoal_cclc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4885,7 +4885,7 @@
     "terrain": "shoal"
   },
   "1121": {
-    "name": "shoal-AN-AE-AS-W",
+    "name": "shoal_cccl",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
@@ -4897,7 +4897,7 @@
     "terrain": "shoal"
   },
   "1122": {
-    "name": "shoal-AN-AE-AS-AW",
+    "name": "shoal_cccc",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
