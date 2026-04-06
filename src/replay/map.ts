@@ -100,7 +100,28 @@ export async function drawMap(
 
       // Draw the plain tile first for buildings to be drawn on top
       drawTile(context, plainTile, x, y, scaleFactor);
-      drawTile(context, tile, x, y, scaleFactor);
+
+      if (tile.terrain === "mountain") {
+        const tileNorthId = map[x][Math.max(y - 1, 0)];
+        const tileNorth = tileData.get(tileNorthId);
+        const shortenMountain = (
+          tileNorth.terrain !== "mountain"
+            && tileNorth.terrain !== "sea"
+            && tileNorth.terrain !== "shoal"
+            && tileNorth.terrain !== "plain"
+        )
+
+        if (shortenMountain) {
+          let img = tile.sprite;
+          if (Array.isArray(img)) img = img[0];
+          drawTile(context, tile, x, y, scaleFactor, cellSize / img.naturalHeight);
+        } else {
+          drawTile(context, tile, x, y, scaleFactor);
+        }
+      } else {
+        drawTile(context, tile, x, y, scaleFactor);
+      }
+
     }
   }
 
@@ -150,8 +171,11 @@ function drawTile(
   x: number,
   y: number,
   scaleFactor: number,
+  scaleFactorY: number | null = null,
 ): void {
   const cellSize = BASE_SIZE * scaleFactor;
+  const scaleFactorX = scaleFactor;
+  scaleFactorY = scaleFactorY ? scaleFactorY : scaleFactor;
   let img = tile.sprite;
 
   if (Array.isArray(img)) {
@@ -161,10 +185,10 @@ function drawTile(
   // x = padding + grid_x + (cellWidth - imageWidth)
   context.drawImage(
     img,
-    MAP_PADDING * cellSize + x * cellSize + (cellSize - img.naturalWidth * scaleFactor),
-    MAP_PADDING * cellSize + y * cellSize + (cellSize - img.naturalHeight * scaleFactor),
-    img.naturalWidth * scaleFactor,
-    img.naturalHeight * scaleFactor,
+    MAP_PADDING * cellSize + x * cellSize + (cellSize - img.naturalWidth * scaleFactorX),
+    MAP_PADDING * cellSize + y * cellSize + (cellSize - img.naturalHeight * scaleFactorY),
+    img.naturalWidth * scaleFactorX,
+    img.naturalHeight * scaleFactorY,
   );
 }
 
@@ -211,7 +235,6 @@ function getCorrectedTileId(
   x: number,
   y: number,
 ): number {
-  info(`Correcting tile id ${tileId}`);
   const tile = tileData.get(tileId);
 
   if (tile.terrain === "shoal") {
@@ -223,7 +246,6 @@ function getCorrectedTileId(
       return tileId;
     }
 
-    info(`Correcting tile ${tileId} to ${getTerrainSuffix(map, x, y, tileData, false)}`);
     return tileData.getTileIdByName(
       "sea_" + getTerrainSuffix(map, x, y, tileData, false),
     );

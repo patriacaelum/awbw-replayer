@@ -22,7 +22,7 @@ function setup() {
     return;
   }
 
-  info(`Loading replay ${replayId}`);
+  info(`Loading replay ${replayId}...`);
   Alpine.store("replayId", replayId);
   Alpine.store("scaleFactor", 2);
   Alpine.start();
@@ -48,7 +48,7 @@ async function loadReplayFile(replayId: string) {
 
   const mapId = turns[0].maps_id;
   Alpine.store("mapId", mapId);
-  info(`Loading map ${mapId}`);
+  info(`Loading map ${mapId}...`);
   loadMapFile(mapId);
 }
 
@@ -73,7 +73,6 @@ async function loadMapFile(mapId: number) {
   const sizeY = mapData["Size Y"];
   const tiles = mapData["Terrain Map"];
   const distinctTiles = [...new Set(tiles.flat())].sort();
-  info(`Distinct tile values (${distinctTiles.length}): ${distinctTiles.join(", ")}`);
 
   info(`Successfully loaded map ${mapId}`);
   Alpine.store("mapName", mapData.Name);

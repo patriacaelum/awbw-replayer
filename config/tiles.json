@@ -406,7 +406,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "City",
+    "terrain": "city",
     "countryId": 0,
     "frames": []
   },
@@ -421,7 +421,7 @@
       "air": 1,
       "pipe": 1
     },
-    "terrain": "Base",
+    "terrain": "base",
     "countryId": 0,
     "frames": []
   },
@@ -436,7 +436,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Airport",
+    "terrain": "airport",
     "countryId": 0,
     "frames": []
   },
@@ -451,7 +451,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Port",
+    "terrain": "port",
     "countryId": 0,
     "frames": []
   },
@@ -466,7 +466,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "City",
+    "terrain": "city",
     "countryId": 1,
     "frames": [
       300,
@@ -485,7 +485,7 @@
       "air": 1,
       "pipe": 1
     },
-    "terrain": "Base",
+    "terrain": "base",
     "countryId": 1,
     "frames": [
       300,
@@ -507,7 +507,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Airport",
+    "terrain": "airport",
     "countryId": 1,
     "frames": [
       300,
@@ -526,7 +526,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Port",
+    "terrain": "port",
     "countryId": 1,
     "frames": [
       300,
@@ -545,7 +545,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "HQ",
+    "terrain": "hq",
     "countryId": 1,
     "frames": [
       300,
@@ -564,7 +564,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "City",
+    "terrain": "city",
     "countryId": 2,
     "frames": [
       200,
@@ -583,7 +583,7 @@
       "air": 1,
       "pipe": 1
     },
-    "terrain": "Base",
+    "terrain": "base",
     "countryId": 2,
     "frames": [
       200,
@@ -605,7 +605,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Airport",
+    "terrain": "airport",
     "countryId": 2,
     "frames": [
       200,
@@ -624,7 +624,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Port",
+    "terrain": "port",
     "countryId": 2,
     "frames": [
       200,
@@ -643,7 +643,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "HQ",
+    "terrain": "hq",
     "countryId": 2,
     "frames": [
       200,
@@ -662,7 +662,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "City",
+    "terrain": "city",
     "countryId": 3,
     "frames": [
       100,
@@ -681,7 +681,7 @@
       "air": 1,
       "pipe": 1
     },
-    "terrain": "Base",
+    "terrain": "base",
     "countryId": 3,
     "frames": [
       100,
@@ -703,7 +703,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Airport",
+    "terrain": "airport",
     "countryId": 3,
     "frames": [
       100,
@@ -722,7 +722,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Port",
+    "terrain": "port",
     "countryId": 3,
     "frames": [
       100,
@@ -741,7 +741,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "HQ",
+    "terrain": "hq",
     "countryId": 3,
     "frames": [
       100,
@@ -760,7 +760,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "City",
+    "terrain": "city",
     "countryId": 4,
     "frames": [
       1200,
@@ -778,7 +778,7 @@
       "air": 1,
       "pipe": 1
     },
-    "terrain": "Base",
+    "terrain": "base",
     "countryId": 4,
     "frames": [
       400,
@@ -798,7 +798,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Airport",
+    "terrain": "airport",
     "countryId": 4,
     "frames": [
       1200,
@@ -816,7 +816,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Port",
+    "terrain": "port",
     "countryId": 4,
     "frames": [
       1200,
@@ -834,7 +834,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "HQ",
+    "terrain": "hq",
     "countryId": 4,
     "frames": [
       1200,
@@ -852,7 +852,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "City",
+    "terrain": "city",
     "countryId": 6,
     "frames": [
       1000,
@@ -871,7 +871,7 @@
       "air": 1,
       "pipe": 1
     },
-    "terrain": "Base",
+    "terrain": "base",
     "countryId": 6,
     "frames": [
       400,
@@ -893,7 +893,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Airport",
+    "terrain": "airport",
     "countryId": 6,
     "frames": [
       1000,
@@ -912,7 +912,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Port",
+    "terrain": "port",
     "countryId": 6,
     "frames": [
       1000,
@@ -931,7 +931,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "HQ",
+    "terrain": "hq",
     "countryId": 6,
     "frames": [
       600,
@@ -959,7 +959,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "City",
+    "terrain": "city",
     "countryId": 7,
     "frames": [
       900,
@@ -978,7 +978,7 @@
       "air": 1,
       "pipe": 1
     },
-    "terrain": "Base",
+    "terrain": "base",
     "countryId": 7,
     "frames": [
       400,
@@ -1000,7 +1000,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Airport",
+    "terrain": "airport",
     "countryId": 7,
     "frames": [
       900,
@@ -1019,7 +1019,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Port",
+    "terrain": "port",
     "countryId": 7,
     "frames": [
       900,
@@ -1038,7 +1038,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "HQ",
+    "terrain": "hq",
     "countryId": 7,
     "frames": [
       900,
@@ -1057,7 +1057,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "City",
+    "terrain": "city",
     "countryId": 5,
     "frames": [
       1100,
@@ -1076,7 +1076,7 @@
       "air": 1,
       "pipe": 1
     },
-    "terrain": "Base",
+    "terrain": "base",
     "countryId": 5,
     "frames": [
       400,
@@ -1098,7 +1098,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Airport",
+    "terrain": "airport",
     "countryId": 5,
     "frames": [
       1100,
@@ -1117,7 +1117,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Port",
+    "terrain": "port",
     "countryId": 5,
     "frames": [
       1100,
@@ -1136,7 +1136,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "HQ",
+    "terrain": "hq",
     "countryId": 5,
     "frames": [
       1100,
@@ -1155,7 +1155,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "City",
+    "terrain": "city",
     "countryId": 8,
     "frames": [
       800,
@@ -1174,7 +1174,7 @@
       "air": 1,
       "pipe": 1
     },
-    "terrain": "Base",
+    "terrain": "base",
     "countryId": 8,
     "frames": [
       400,
@@ -1194,7 +1194,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Airport",
+    "terrain": "airport",
     "countryId": 8,
     "frames": [
       800,
@@ -1213,7 +1213,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Port",
+    "terrain": "port",
     "countryId": 8,
     "frames": [
       800,
@@ -1232,7 +1232,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "HQ",
+    "terrain": "hq",
     "countryId": 8,
     "frames": [
       800,
@@ -1250,7 +1250,7 @@
       "tire": 0,
       "air": 0
     },
-    "terrain": "building"
+    "terrain": "pipe"
   },
   "102": {
     "name": "pipe_ew",
@@ -1262,7 +1262,7 @@
       "tire": 0,
       "air": 0
     },
-    "terrain": "building"
+    "terrain": "pipe"
   },
   "103": {
     "name": "pipe_ne",
@@ -1274,7 +1274,7 @@
       "tire": 0,
       "air": 0
     },
-    "terrain": "building"
+    "terrain": "pipe"
   },
   "104": {
     "name": "pipe_es",
@@ -1286,7 +1286,7 @@
       "tire": 0,
       "air": 0
     },
-    "terrain": "building"
+    "terrain": "pipe"
   },
   "105": {
     "name": "pipe_sw",
@@ -1298,7 +1298,7 @@
       "tire": 0,
       "air": 0
     },
-    "terrain": "building"
+    "terrain": "pipe"
   },
   "106": {
     "name": "pipe_nw",
@@ -1310,7 +1310,7 @@
       "tire": 0,
       "air": 0
     },
-    "terrain": "building"
+    "terrain": "pipe"
   },
   "107": {
     "name": "pipe_end_n",
@@ -1322,7 +1322,7 @@
       "tire": 0,
       "air": 0
     },
-    "terrain": "building"
+    "terrain": "pipe"
   },
   "108": {
     "name": "pipe_end_e",
@@ -1334,7 +1334,7 @@
       "tire": 0,
       "air": 0
     },
-    "terrain": "building"
+    "terrain": "pipe"
   },
   "109": {
     "name": "pipe_end_s",
@@ -1346,7 +1346,7 @@
       "tire": 0,
       "air": 0
     },
-    "terrain": "building"
+    "terrain": "pipe"
   },
   "110": {
     "name": "pipe_end_w",
@@ -1358,7 +1358,7 @@
       "tire": 0,
       "air": 0
     },
-    "terrain": "building"
+    "terrain": "pipe"
   },
   "111": {
     "name": "silo",
@@ -1371,7 +1371,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Missile",
+    "terrain": "silo",
     "countryId": 0,
     "frames": []
   },
@@ -1385,7 +1385,7 @@
       "tire": 1,
       "air": 1
     },
-    "terrain": "plain"
+    "terrain": "silo"
   },
   "113": {
     "name": "pipe_seam_ew",
@@ -1398,7 +1398,7 @@
       "air": -1,
       "pipe": 1
     },
-    "terrain": "PipeSeam",
+    "terrain": "pipe_seam",
     "countryId": 0,
     "frames": []
   },
@@ -1413,7 +1413,7 @@
       "air": -1,
       "pipe": 1
     },
-    "terrain": "PipeSeam",
+    "terrain": "pipe_seam",
     "countryId": 0,
     "frames": []
   },
@@ -1452,7 +1452,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Airport",
+    "terrain": "airport",
     "countryId": 9,
     "frames": [
       700,
@@ -1471,7 +1471,7 @@
       "air": 1,
       "pipe": 1
     },
-    "terrain": "Base",
+    "terrain": "base",
     "countryId": 9,
     "frames": [
       400,
@@ -1493,7 +1493,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "City",
+    "terrain": "city",
     "countryId": 9,
     "frames": [
       700,
@@ -1512,7 +1512,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "HQ",
+    "terrain": "hq",
     "countryId": 9,
     "frames": [
       700,
@@ -1531,7 +1531,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Port",
+    "terrain": "port",
     "countryId": 9,
     "frames": [
       700,
@@ -1550,7 +1550,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Airport",
+    "terrain": "airport",
     "countryId": 10,
     "frames": [
       600,
@@ -1569,7 +1569,7 @@
       "air": 1,
       "pipe": 1
     },
-    "terrain": "Base",
+    "terrain": "base",
     "countryId": 10,
     "frames": [
       400,
@@ -1591,7 +1591,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "City",
+    "terrain": "city",
     "countryId": 10,
     "frames": [
       600,
@@ -1610,7 +1610,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "HQ",
+    "terrain": "hq",
     "countryId": 10,
     "frames": [
       600,
@@ -1629,7 +1629,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Port",
+    "terrain": "port",
     "countryId": 10,
     "frames": [
       600,
@@ -1648,7 +1648,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "ComTower",
+    "terrain": "com_tower",
     "countryId": 9,
     "frames": [
       700,
@@ -1667,7 +1667,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "ComTower",
+    "terrain": "com_tower",
     "countryId": 5,
     "frames": [
       1100,
@@ -1686,7 +1686,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "ComTower",
+    "terrain": "com_tower",
     "countryId": 2,
     "frames": [
       200,
@@ -1705,7 +1705,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "ComTower",
+    "terrain": "com_tower",
     "countryId": 8,
     "frames": [
       800,
@@ -1724,7 +1724,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "ComTower",
+    "terrain": "com_tower",
     "countryId": 3,
     "frames": [
       100,
@@ -1743,7 +1743,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "ComTower",
+    "terrain": "com_tower",
     "countryId": 10,
     "frames": [
       600,
@@ -1762,7 +1762,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "ComTower",
+    "terrain": "com_tower",
     "countryId": 0,
     "frames": []
   },
@@ -1777,7 +1777,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "ComTower",
+    "terrain": "com_tower",
     "countryId": 1,
     "frames": [
       300,
@@ -1796,7 +1796,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "ComTower",
+    "terrain": "com_tower",
     "countryId": 6,
     "frames": [
       1000,
@@ -1815,7 +1815,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "ComTower",
+    "terrain": "com_tower",
     "countryId": 4,
     "frames": [
       1200,
@@ -1833,7 +1833,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "ComTower",
+    "terrain": "com_tower",
     "countryId": 7,
     "frames": [
       900,
@@ -1852,7 +1852,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Lab",
+    "terrain": "lab",
     "countryId": 9,
     "frames": [
       700,
@@ -1871,7 +1871,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Lab",
+    "terrain": "lab",
     "countryId": 5,
     "frames": [
       1100,
@@ -1890,7 +1890,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Lab",
+    "terrain": "lab",
     "countryId": 2,
     "frames": [
       200,
@@ -1909,7 +1909,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Lab",
+    "terrain": "lab",
     "countryId": 8,
     "frames": [
       800,
@@ -1928,7 +1928,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Lab",
+    "terrain": "lab",
     "countryId": 3,
     "frames": [
       100,
@@ -1947,7 +1947,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Lab",
+    "terrain": "lab",
     "countryId": 7,
     "frames": [
       900,
@@ -1966,7 +1966,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Lab",
+    "terrain": "lab",
     "countryId": 10,
     "frames": [
       600,
@@ -1985,7 +1985,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Lab",
+    "terrain": "lab",
     "countryId": 0,
     "frames": []
   },
@@ -2000,7 +2000,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Lab",
+    "terrain": "lab",
     "countryId": 1,
     "frames": [
       300,
@@ -2019,7 +2019,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Lab",
+    "terrain": "lab",
     "countryId": 6,
     "frames": [
       1000,
@@ -2038,7 +2038,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Lab",
+    "terrain": "lab",
     "countryId": 4,
     "frames": [
       1200,
@@ -2056,7 +2056,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Airport",
+    "terrain": "airport",
     "countryId": 16,
     "frames": [
       500,
@@ -2075,7 +2075,7 @@
       "air": 1,
       "pipe": 1
     },
-    "terrain": "Base",
+    "terrain": "base",
     "countryId": 16,
     "frames": [
       400,
@@ -2097,7 +2097,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "City",
+    "terrain": "city",
     "countryId": 16,
     "frames": [
       500,
@@ -2116,7 +2116,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "ComTower",
+    "terrain": "com_tower",
     "countryId": 16,
     "frames": [
       500,
@@ -2135,7 +2135,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "HQ",
+    "terrain": "hq",
     "countryId": 16,
     "frames": [
       500,
@@ -2173,7 +2173,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Lab",
+    "terrain": "lab",
     "countryId": 16,
     "frames": [
       500,
@@ -2192,7 +2192,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Port",
+    "terrain": "port",
     "countryId": 16,
     "frames": [
       500,
@@ -2211,7 +2211,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Airport",
+    "terrain": "airport",
     "countryId": 17,
     "frames": [
       400,
@@ -2230,7 +2230,7 @@
       "air": 1,
       "pipe": 1
     },
-    "terrain": "Base",
+    "terrain": "base",
     "countryId": 17,
     "frames": [
       400,
@@ -2250,7 +2250,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "City",
+    "terrain": "city",
     "countryId": 17,
     "frames": [
       400,
@@ -2269,7 +2269,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "ComTower",
+    "terrain": "com_tower",
     "countryId": 17,
     "frames": [
       400,
@@ -2288,7 +2288,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "HQ",
+    "terrain": "hq",
     "countryId": 17,
     "frames": [
       400,
@@ -2307,7 +2307,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Lab",
+    "terrain": "lab",
     "countryId": 17,
     "frames": [
       400,
@@ -2326,7 +2326,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Port",
+    "terrain": "port",
     "countryId": 17,
     "frames": [
       400,
@@ -2345,7 +2345,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Airport",
+    "terrain": "airport",
     "countryId": 19,
     "frames": [
       300,
@@ -2364,7 +2364,7 @@
       "air": 1,
       "pipe": 1
     },
-    "terrain": "Base",
+    "terrain": "base",
     "countryId": 19,
     "frames": [
       300,
@@ -2386,7 +2386,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "City",
+    "terrain": "city",
     "countryId": 19,
     "frames": [
       300,
@@ -2405,7 +2405,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "ComTower",
+    "terrain": "com_tower",
     "countryId": 19,
     "frames": [
       300,
@@ -2424,7 +2424,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "HQ",
+    "terrain": "hq",
     "countryId": 19,
     "frames": [
       300,
@@ -2443,7 +2443,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Lab",
+    "terrain": "lab",
     "countryId": 19,
     "frames": [
       300,
@@ -2462,7 +2462,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Port",
+    "terrain": "port",
     "countryId": 19,
     "frames": [
       300,
@@ -2481,7 +2481,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Airport",
+    "terrain": "airport",
     "countryId": 20,
     "frames": [
       200,
@@ -2500,7 +2500,7 @@
       "air": 1,
       "pipe": 1
     },
-    "terrain": "Base",
+    "terrain": "base",
     "countryId": 20,
     "frames": [
       200,
@@ -2522,7 +2522,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "City",
+    "terrain": "city",
     "countryId": 20,
     "frames": [
       200,
@@ -2541,7 +2541,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "ComTower",
+    "terrain": "com_tower",
     "countryId": 20,
     "frames": [
       200,
@@ -2560,7 +2560,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "HQ",
+    "terrain": "hq",
     "countryId": 20,
     "frames": [
       200,
@@ -2579,7 +2579,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Lab",
+    "terrain": "lab",
     "countryId": 20,
     "frames": [
       200,
@@ -2598,7 +2598,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Port",
+    "terrain": "port",
     "countryId": 20,
     "frames": [
       200,
@@ -2617,7 +2617,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Airport",
+    "terrain": "airport",
     "countryId": 21,
     "frames": [
       100,
@@ -2636,7 +2636,7 @@
       "air": 1,
       "pipe": 1
     },
-    "terrain": "Base",
+    "terrain": "base",
     "countryId": 21,
     "frames": [
       100,
@@ -2658,7 +2658,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "City",
+    "terrain": "city",
     "countryId": 21,
     "frames": [
       100,
@@ -2677,7 +2677,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "ComTower",
+    "terrain": "com_tower",
     "countryId": 21,
     "frames": [
       100,
@@ -2696,7 +2696,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "HQ",
+    "terrain": "hq",
     "countryId": 21,
     "frames": [
       100,
@@ -2715,7 +2715,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Lab",
+    "terrain": "lab",
     "countryId": 21,
     "frames": [
       100,
@@ -2734,7 +2734,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Port",
+    "terrain": "port",
     "countryId": 21,
     "frames": [
       100,
@@ -2753,7 +2753,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Airport",
+    "terrain": "airport",
     "countryId": 22,
     "frames": [
       400,
@@ -2771,7 +2771,7 @@
       "air": 1,
       "pipe": 1
     },
-    "terrain": "Base",
+    "terrain": "base",
     "countryId": 22,
     "frames": [
       400,
@@ -2791,7 +2791,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "City",
+    "terrain": "city",
     "countryId": 22,
     "frames": [
       400,
@@ -2809,7 +2809,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "ComTower",
+    "terrain": "com_tower",
     "countryId": 22,
     "frames": [
       400,
@@ -2827,7 +2827,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "HQ",
+    "terrain": "hq",
     "countryId": 22,
     "frames": [
       400,
@@ -2845,7 +2845,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Lab",
+    "terrain": "lab",
     "countryId": 22,
     "frames": [
       400,
@@ -2863,7 +2863,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Port",
+    "terrain": "port",
     "countryId": 22,
     "frames": [
       400,
@@ -2880,7 +2880,7 @@
       "tire": 0,
       "air": 0
     },
-    "terrain": "plain"
+    "terrain": "teleporter"
   },
   "196": {
     "name": "azure_asteroid/airport",
@@ -2893,7 +2893,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Airport",
+    "terrain": "airport",
     "countryId": 23,
     "frames": [
       300,
@@ -2912,7 +2912,7 @@
       "air": 1,
       "pipe": 1
     },
-    "terrain": "Base",
+    "terrain": "base",
     "countryId": 23,
     "frames": [
       300,
@@ -2934,7 +2934,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "City",
+    "terrain": "city",
     "countryId": 23,
     "frames": [
       300,
@@ -2953,7 +2953,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "ComTower",
+    "terrain": "com_tower",
     "countryId": 23,
     "frames": [
       300,
@@ -2972,7 +2972,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "HQ",
+    "terrain": "hq",
     "countryId": 23,
     "frames": [
       300,
@@ -2991,7 +2991,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Lab",
+    "terrain": "lab",
     "countryId": 23,
     "frames": [
       300,
@@ -3010,7 +3010,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Port",
+    "terrain": "port",
     "countryId": 23,
     "frames": [
       300,
@@ -3029,7 +3029,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Airport",
+    "terrain": "airport",
     "countryId": 24,
     "frames": [
       300,
@@ -3048,7 +3048,7 @@
       "air": 1,
       "pipe": 1
     },
-    "terrain": "Base",
+    "terrain": "base",
     "countryId": 24,
     "frames": [
       300,
@@ -3070,7 +3070,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "City",
+    "terrain": "city",
     "countryId": 24,
     "frames": [
       300,
@@ -3089,7 +3089,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "ComTower",
+    "terrain": "com_tower",
     "countryId": 24,
     "frames": [
       300,
@@ -3108,7 +3108,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "HQ",
+    "terrain": "hq",
     "countryId": 24,
     "frames": [
       300,
@@ -3127,7 +3127,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Lab",
+    "terrain": "lab",
     "countryId": 24,
     "frames": [
       200,
@@ -3146,7 +3146,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Port",
+    "terrain": "port",
     "countryId": 24,
     "frames": [
       300,
@@ -3165,7 +3165,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Airport",
+    "terrain": "airport",
     "countryId": 25,
     "frames": [
       1000,
@@ -3184,7 +3184,7 @@
       "air": 1,
       "pipe": 1
     },
-    "terrain": "Base",
+    "terrain": "base",
     "countryId": 25,
     "frames": [
       400,
@@ -3206,7 +3206,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "City",
+    "terrain": "city",
     "countryId": 25,
     "frames": [
       1000,
@@ -3225,7 +3225,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "ComTower",
+    "terrain": "com_tower",
     "countryId": 25,
     "frames": [
       1000,
@@ -3244,7 +3244,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "HQ",
+    "terrain": "hq",
     "countryId": 25,
     "frames": [
       400,
@@ -3265,7 +3265,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Lab",
+    "terrain": "lab",
     "countryId": 25,
     "frames": [
       1000,
@@ -3284,7 +3284,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Port",
+    "terrain": "port",
     "countryId": 25,
     "frames": [
       1000,
@@ -3303,7 +3303,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Airport",
+    "terrain": "airport",
     "countryId": 26,
     "frames": [
       200,
@@ -3322,7 +3322,7 @@
       "air": 1,
       "pipe": 1
     },
-    "terrain": "Base",
+    "terrain": "base",
     "countryId": 26,
     "frames": [
       200,
@@ -3344,7 +3344,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "City",
+    "terrain": "city",
     "countryId": 26,
     "frames": [
       200,
@@ -3363,7 +3363,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "ComTower",
+    "terrain": "com_tower",
     "countryId": 26,
     "frames": [
       200,
@@ -3382,7 +3382,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "HQ",
+    "terrain": "hq",
     "countryId": 26,
     "frames": [
       200,
@@ -3405,7 +3405,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Lab",
+    "terrain": "lab",
     "countryId": 26,
     "frames": [
       200,
@@ -3424,7 +3424,7 @@
       "air": 1,
       "pipe": -1
     },
-    "terrain": "Port",
+    "terrain": "port",
     "countryId": 26,
     "frames": [
       200,
