@@ -1,5 +1,5 @@
 import Alpine from "alpinejs";
-import { info } from "@tauri-apps/plugin-log";
+import { error, info } from "@tauri-apps/plugin-log";
 
 import cursorFile from "/src/assets/textures/ui/select.png";
 import { openFile, pathExists, saveFile } from "../fileIO";
@@ -85,7 +85,11 @@ async function loadMapFile(mapId: number) {
   overlay = overlayEl;
 
   const scaleFactor = Alpine.store("scaleFactor") as number;
-  const { tileData, mapWidth: w, mapHeight: h } = await drawMap(canvas, mapData, scaleFactor);
+  const { tileData, mapWidth: w, mapHeight: h } = await drawMap(
+    canvas,
+    mapData,
+    scaleFactor,
+  );
   mapWidth = w;
   mapHeight = h;
   Alpine.store("cellSize", BASE_SIZE * scaleFactor);
@@ -93,13 +97,9 @@ async function loadMapFile(mapId: number) {
   overlayEl.width = canvas.width;
   overlayEl.height = canvas.height;
 
-  const plainTile = tileData[1];
-  if (!plainTile) {
-    return;
-  }
-
   const ctxOrNull = overlayEl.getContext("2d");
   if (!ctxOrNull) {
+    error("Failed to find overlay context to draw UI elements");
     return;
   }
 

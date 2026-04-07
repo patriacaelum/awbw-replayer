@@ -72,7 +72,6 @@ export async function drawMap(
   tileData: TileData;
   mapWidth: number;
   mapHeight: number;
-  scaleFactor: number;
 }> {
   const context = canvas.getContext("2d");
 
@@ -125,7 +124,7 @@ export async function drawMap(
     }
   }
 
-  return { tileData, mapWidth: width, mapHeight: height, scaleFactor };
+  return { tileData, mapWidth: width, mapHeight: height};
 }
 
 /** Convert canvas-relative pixel coords to grid cell. Returns null if outside map. */
