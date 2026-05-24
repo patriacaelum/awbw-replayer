@@ -13,7 +13,7 @@ export type ReplayData = { [filename: string]: string };
 const FS_OPTIONS = { baseDir: BaseDirectory.AppData };
 
 /** Create a directory in $APPDATA if it doesn't already exist.
-  */
+ */
 export async function createDirectory(path: string): Promise<void> {
   if (await pathExists(path)) {
     return;
@@ -33,7 +33,7 @@ export async function createDirectory(path: string): Promise<void> {
 }
 
 /** Opens a text file in $APPDATA.
-  */
+ */
 export async function openFile(path: string): Promise<string> {
   return new Promise((resolve, reject) => {
     readTextFile(path, FS_OPTIONS)
@@ -46,7 +46,7 @@ export async function openFile(path: string): Promise<string> {
 }
 
 /** Checks if the path to the directory or file exists.
-  */
+ */
 export async function pathExists(path: string): Promise<boolean> {
   return new Promise((resolve, reject) => {
     exists(path, FS_OPTIONS)
@@ -66,7 +66,7 @@ export async function pathExists(path: string): Promise<boolean> {
 }
 
 /** Saves the text file to $APPDATA.
-  */
+ */
 export async function saveFile(path: string, data: string): Promise<void> {
   return new Promise((resolve, reject) => {
     writeTextFile(path, data, FS_OPTIONS)
@@ -105,7 +105,7 @@ export async function unzipReplayFile(data: Uint8Array): Promise<ReplayData> {
 }
 
 /** Decompresses gzip data.
-  */
+ */
 async function decompressFile(data: Uint8Array): Promise<string> {
   return new Promise((resolve, reject) => {
     const chunks: Uint8Array[] = [];
