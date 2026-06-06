@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { AWBWReplay, ReplayParser } from "./parser";
+import { AWBWObject, ReplayParser } from "./parser";
 
 describe("ReplayParser", () => {
   test("parse null", () => {
@@ -33,8 +33,8 @@ describe("ReplayParser", () => {
   test("parse object", () => {
     const data = "O:8:\"position\":2:{s:1:\"x\";i:22;s:1:\"y\";i:13;}"
     const parser = new ReplayParser(data);
-    const result = parser.parseValue() as AWBWReplay;
-    const position = result.position as AWBWReplay;
+    const result = parser.parseValue() as AWBWObject;
+    const position = result.position as AWBWObject;
 
     expect(position["x"]).toBe(22);
     expect(position["y"]).toBe(13);
@@ -43,7 +43,7 @@ describe("ReplayParser", () => {
   test("parse array", () => {
     const data = "a:2:{i:0;s:1:\"x\";i:1;s:1:\"y\";}"
     const parser = new ReplayParser(data);
-    const result = parser.parseValue() as AWBWReplay[];
+    const result = parser.parseValue() as AWBWObject[];
 
     expect(result[0]).toBe("x");
     expect(result[1]).toBe("y");

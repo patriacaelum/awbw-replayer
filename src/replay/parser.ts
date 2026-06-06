@@ -41,6 +41,10 @@ export class ReplayParser {
     return turnData;
   }
 
+  parseActionData() {
+    return {};
+  }
+
   parseValue(): AWBWObjectValue {
     const character = this.data[this.position];
 

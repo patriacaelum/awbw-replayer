@@ -1,21 +1,35 @@
 import Alpine from "alpinejs";
-import { error, info } from "@tauri-apps/plugin-log";
+import { info } from "@tauri-apps/plugin-log";
+import { loadReplay, loadMap } from "../replay/loader";
+import { drawMap } from "../replay/map";
+import { mouseEventToGrid } from "../map/grid";
+import { drawTileAtGrid } from "../map/draw";
 
-import cursorFile from "/src/assets/textures/ui/select.png";
-import { openFile, pathExists, saveFile } from "../fileIO";
-import { AWBWAPIClient, AWBWMapInfo } from "../api_client/awbw";
-import { ReplayParser } from "../replay/parser";
-import { drawMap, canvasToGrid, drawTileAtGrid, BASE_SIZE, Tile } from "../replay/map";
 
 if (document.readyState === "loading") {
-  window.addEventListener("DOMContentLoaded", setup);
+  window.addEventListener("DOMContentLoaded", setupReplayPage);
 } else {
-  setup();
+  setupReplayPage();
 }
 
-function setup() {
-  const params = new URLSearchParams(window.location.search);
-  const replayId = params.get("id");
+async function setupReplayPage(): Promise<void> {
+  const canvas = document.getElementById("map-grid") as HTMLCanvasElement;
+  const overlay = document.getElementById("map-overlay") as HTMLCanvasElement;
+
+  loadReplayPage(canvas);
+
+  canvas.addEventListener("mousemove", (event: MouseEvent): void => {
+    onCanvasMouseMove(event, overlay);
+  });
+  canvas.addEventListener("mouseleave", (_: MouseEvent): void => {
+    clearCanvas(overlay);
+  });
+
+  Alpine.start();
+}
+
+async function loadReplayPage(canvas: HTMLCanvasElement): Promise<void> {
+  const replayId = new URLSearchParams(window.location.search).get("id");
 
   if (replayId === null) {
     location.assign("/index.html");
@@ -24,127 +38,45 @@ function setup() {
 
   info(`Loading replay ${replayId}...`);
   Alpine.store("replayId", replayId);
-  Alpine.store("scaleFactor", 2);
-  Alpine.start();
 
-  loadReplayFile(replayId);
-}
+  const replayData = await loadReplay(replayId);
+  const mapId = replayData.replay[0].maps_id.toString();
+  const mapData = await loadMap(mapId);
+  const scaleFactor = 2;
 
-let currentMapData: AWBWMapInfo | null = null;
-let mapWidth = 0;
-let mapHeight = 0;
-let overlayCtx: CanvasRenderingContext2D | null = null;
-let overlay: HTMLCanvasElement | null = null;
-let cursorTile: Tile | null = null;
-
-async function loadReplayFile(replayId: string) {
-  const turnData = await openFile("replays/" + replayId);
-  const actionData= await openFile("replays/" + "a" + replayId);
-
-  const turnDataParser = new ReplayParser(turnData);
-  const turns = turnDataParser.parseTurnData();
-  // const actionDataParser = new ReplayParser(actionData);
-  // const actions = actionDataParser.parseActionData();
-
-  const mapId = turns[0].maps_id;
-  Alpine.store("mapId", mapId);
-  info(`Loading map ${mapId}...`);
-  loadMapFile(mapId);
-}
-
-async function loadMapFile(mapId: number) {
-  const mapFilename = "maps/" + mapId + ".json";
-  let mapData: AWBWMapInfo;
-
-  if (await pathExists(mapFilename)) {
-    mapData = JSON.parse(await openFile(mapFilename)) as AWBWMapInfo;
-  } else {
-    const client = new AWBWAPIClient()
-    mapData = await client.getMapInfo(mapId);
-
-    if (mapData.err === undefined) {
-      await saveFile(mapFilename, JSON.stringify(mapData));
-    } else {
-      Alpine.store("mapLoadingError", mapData.message);
-    }
-  }
-
-  const sizeX = mapData["Size X"];
-  const sizeY = mapData["Size Y"];
-  const tiles = mapData["Terrain Map"];
-  const distinctTiles = [...new Set(tiles.flat())].sort();
-
-  info(`Successfully loaded map ${mapId}`);
   Alpine.store("mapName", mapData.Name);
   Alpine.store("mapAuthor", mapData.Author);
-  Alpine.store("mapSize", { x: sizeX, y: sizeY });
+  Alpine.store("mapSize", { x: mapData["Size X"], y: mapData["Size Y"] });
+  Alpine.store("scaleFactor", scaleFactor);
 
-  currentMapData = mapData;
-  const canvas = document.getElementById("map-grid") as HTMLCanvasElement;
-  const overlayEl = document.getElementById("map-overlay") as HTMLCanvasElement;
-  overlay = overlayEl;
-
-  const scaleFactor = Alpine.store("scaleFactor") as number;
-  const { tileData, mapWidth: w, mapHeight: h } = await drawMap(
-    canvas,
-    mapData,
-    scaleFactor,
-  );
-  mapWidth = w;
-  mapHeight = h;
-  Alpine.store("cellSize", BASE_SIZE * scaleFactor);
-
-  overlayEl.width = canvas.width;
-  overlayEl.height = canvas.height;
-
-  const ctxOrNull = overlayEl.getContext("2d");
-  if (!ctxOrNull) {
-    error("Failed to find overlay context to draw UI elements");
-    return;
-  }
-
-  overlayCtx = ctxOrNull;
-  const cursorImage = new Image();
-  cursorImage.src = cursorFile;
-  cursorTile = {
-    name: "cursor",
-    sprite: cursorImage,
-  };
-
-  canvas.addEventListener("mousemove", (e) => {
-    if (!overlayCtx || !overlay || !cursorTile) return;
-    const scale = Alpine.store("scaleFactor") as number;
-    const rect = canvas.getBoundingClientRect();
-    const scaleX = canvas.width / rect.width;
-    const scaleY = canvas.height / rect.height;
-    const offsetX = (e.clientX - rect.left) * scaleX;
-    const offsetY = (e.clientY - rect.top) * scaleY;
-
-    const cell = canvasToGrid(offsetX, offsetY, mapWidth, mapHeight, scale);
-    if (cell) {
-      overlayCtx.clearRect(0, 0, overlay.width, overlay.height);
-      drawTileAtGrid(overlayCtx, cursorTile, cell.gx, cell.gy, scale);
-    } else {
-      overlayCtx.clearRect(0, 0, overlay.width, overlay.height);
-    }
-  });
-
-  canvas.addEventListener("mouseleave", () => {
-    if (overlayCtx && overlay) overlayCtx.clearRect(0, 0, overlay.width, overlay.height);
-  });
-
-  (window as Window & { __redrawMap?: () => Promise<void> }).__redrawMap = redrawMap;
+  drawMap(canvas, mapData, scaleFactor);
 }
 
-async function redrawMap() {
-  if (!currentMapData || !overlay || !overlayCtx || !cursorTile) return;
-  const canvas = document.getElementById("map-grid") as HTMLCanvasElement;
+async function onCanvasMouseMove(
+  e: MouseEvent,
+  canvas: HTMLCanvasElement,
+): Promise<void> {
+  const mapSize = Alpine.store("mapSize") as { x: number, y: number };
   const scaleFactor = Alpine.store("scaleFactor") as number;
+  const context = clearCanvas(canvas);
+  const gridPosition = mouseEventToGrid(canvas, e, mapSize, scaleFactor);
 
-  await drawMap(canvas, currentMapData, scaleFactor);
-  Alpine.store("cellSize", BASE_SIZE * scaleFactor);
+  if (gridPosition !== null) {
+    drawTileAtGrid(context, cursorTile, gridPosition, scaleFactor);
+  }
+}
 
-  overlay.width = canvas.width;
-  overlay.height = canvas.height;
-  overlayCtx.clearRect(0, 0, overlay.width, overlay.height);
+/** Clears the canvas and returns the 2d rendering context. */
+function clearCanvas(canvas: HTMLCanvasElement): CanvasRenderingContext2D {
+  const context = canvas.getContext("2d");
+  
+  if (!context) {
+    throw new Error(
+      "Failed to remove mouse cursor: no 2d context found in overlay canvas"
+    );
+  }
+
+  context.clearRect(0, 0, canvas.width, canvas.height);
+
+  return context;
 }

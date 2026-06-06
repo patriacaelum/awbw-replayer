@@ -3985,7 +3985,7 @@
     "terrain": "sea"
   },
   "1046": {
-    "name": "shoal_llll",
+    "name": "shoal_ssss",
     "defence": 0,
     "movementCost": {
       "lightInfantry": 1,
