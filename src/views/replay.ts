@@ -24,8 +24,6 @@ async function setupReplayPage(): Promise<void> {
   canvas.addEventListener("mouseleave", (_: MouseEvent): void => {
     clearCanvas(overlay);
   });
-
-  Alpine.start();
 }
 
 async function loadReplayPage(canvas: HTMLCanvasElement): Promise<void> {
@@ -37,7 +35,6 @@ async function loadReplayPage(canvas: HTMLCanvasElement): Promise<void> {
   }
 
   info(`Loading replay ${replayId}...`);
-  Alpine.store("replayId", replayId);
 
   const replayData = await loadReplay(replayId);
   const mapId = replayData.replay[0].maps_id.toString();
@@ -48,6 +45,7 @@ async function loadReplayPage(canvas: HTMLCanvasElement): Promise<void> {
   Alpine.store("mapAuthor", mapData.Author);
   Alpine.store("mapSize", { x: mapData["Size X"], y: mapData["Size Y"] });
   Alpine.store("scaleFactor", scaleFactor);
+  Alpine.start();
 
   drawMap(canvas, mapData, scaleFactor);
 }

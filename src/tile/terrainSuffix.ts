@@ -1,45 +1,28 @@
+import { Vector2 } from "../types";
 import { TileData } from "./tile_data";
 
-export function getCorrectedTileId(
-  tileData: TileData,
-  map: number[][],
-  x: number,
-  y: number,
-): number {
-  const tileId = map[x][y];
-  const tile = tileData.get(tileId);
-  if (tile.terrain === "shoal") {
-    return tileData.getTileIdByName("shoal_" + shoalSuffix(map, x, y, tileData));
-  }
-  if (tile.terrain === "sea") {
-    if (tile.name === "reef") return tileId;
-    return tileData.getTileIdByName("sea_" + seaSuffix(map, x, y, tileData));
-  }
-  return tileId;
-}
-
-function shoalSuffix(map: number[][], x: number, y: number, tileData: TileData): string {
-  const n = y - 1 < 0 ? "c" : getTerrainSuffixCharacter(tileData.get(map[x][y - 1]).terrain, false);
-  const e = x + 1 >= map.length ? "c" : getTerrainSuffixCharacter(tileData.get(map[x + 1][y]).terrain, false);
-  const s = y + 1 >= map[x].length ? "c" : getTerrainSuffixCharacter(tileData.get(map[x][y + 1]).terrain, false);
-  const w = x - 1 < 0 ? "c" : getTerrainSuffixCharacter(tileData.get(map[x - 1][y]).terrain, false);
+export function shoalSuffix(map: number[][], position: Vector2, tileData: TileData): string {
+  const n = position.y - 1 < 0 ? "c" : getTerrainSuffixCharacter(tileData.get(map[position.x][position.y - 1]).terrain, false);
+  const e = position.x + 1 >= map.length ? "c" : getTerrainSuffixCharacter(tileData.get(map[position.x + 1][position.y]).terrain, false);
+  const s = position.y + 1 >= map[position.x].length ? "c" : getTerrainSuffixCharacter(tileData.get(map[position.x][position.y + 1]).terrain, false);
+  const w = position.x - 1 < 0 ? "c" : getTerrainSuffixCharacter(tileData.get(map[position.x - 1][position.y]).terrain, false);
   return n + e + s + w;
 }
 
-function seaSuffix(map: number[][], x: number, y: number, tileData: TileData): string {
-  const north = y - 1 >= 0 ? tileData.get(map[x][y - 1]).terrain : "sea";
-  const east = x + 1 < map.length ? tileData.get(map[x + 1][y]).terrain : "sea";
-  const south = y + 1 < map[x].length ? tileData.get(map[x][y + 1]).terrain : "sea";
-  const west = x - 1 >= 0 ? tileData.get(map[x - 1][y]).terrain : "sea";
+export function seaSuffix(map: number[][], position: Vector2, tileData: TileData): string {
+  const north = position.y - 1 >= 0 ? tileData.get(map[position.x][position.y - 1]).terrain : "sea";
+  const east = position.x + 1 < map.length ? tileData.get(map[position.x + 1][position.y]).terrain : "sea";
+  const south = position.y + 1 < map[position.x].length ? tileData.get(map[position.x][position.y + 1]).terrain : "sea";
+  const west = position.x - 1 >= 0 ? tileData.get(map[position.x - 1][position.y]).terrain : "sea";
   return (
-    seaNorth(y, north) +
-    seaNE(map, x, y, tileData, north, east) +
-    seaEast(map, x, east) +
-    seaSE(map, x, y, tileData, east, south) +
-    seaSouth(map, x, y, south) +
-    seaSW(map, x, y, tileData, south, west) +
-    seaWest(x, west) +
-    seaNW(map, x, y, tileData, west, north)
+    seaNorth(position.y, north) +
+    seaNE(map, position.x, position.y, tileData, north, east) +
+    seaEast(map, position.x, east) +
+    seaSE(map, position.x, position.y, tileData, east, south) +
+    seaSouth(map, position.x, position.y, south) +
+    seaSW(map, position.x, position.y, tileData, south, west) +
+    seaWest(position.x, west) +
+    seaNW(map, position.x, position.y, tileData, west, north)
   );
 }
 

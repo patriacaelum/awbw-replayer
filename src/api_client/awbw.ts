@@ -1,5 +1,6 @@
 import { fetch } from "@tauri-apps/plugin-http";
 import { info, error } from "@tauri-apps/plugin-log";
+
 import type { AWBWMapInfo } from "./types";
 
 export class AWBWAPIClient {

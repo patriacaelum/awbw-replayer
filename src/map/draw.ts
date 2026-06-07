@@ -1,12 +1,10 @@
 import { info } from "@tauri-apps/plugin-log";
 import { BASE_SIZE, MAP_PADDING, PLAIN_TILE_ID } from "./constants";
-import { loadTileData } from "../tile/loader";
 import { TileData } from "../tile/tile_data";
-import { getCorrectedTileId } from "../tile/terrainSuffix";
 import { requireContext } from "../canvas";
-import type { AWBWMapInfo } from "../api_client/awbw";
-import type { Vector2 } from "./types";
+import type { AWBWMapInfo } from "../api_client";
 import type { Tile } from "../tile/types";
+import type { Vector2 } from "../types";
 
 /** Maps are drawn with padding of one tile around the perimeter so that the
  * building sprites are not cut off. Cell size = BASE_SIZE * scaleFactor. 
@@ -17,7 +15,8 @@ export async function drawMap(
   scaleFactor: number,
 ): Promise<{ tileData: TileData; mapSize: Vector2; }> {
   const context = requireContext(canvas);
-  const tileData = await loadTileData();
+  const tileData = new TileData();
+  await tileData.loadTiles();
   const mapSize = { x: mapData["Size X"], y: mapData["Size Y"] };
   const cellSize = BASE_SIZE * scaleFactor;
 
@@ -28,8 +27,7 @@ export async function drawMap(
 
   for (let x = 0; x < mapData["Size X"]; x++) {
     for (let y = 0; y < mapData["Size Y"]; y++) {
-      const tileId = getCorrectedTileId(tileData, mapData["Terrain Map"], x, y);
-      const tile = tileData.get(tileId);
+      const tile = tileData.getVariation(mapData["Terrain Map"], { x, y });
 
       if (tile.terrain === "mountain" && shortenTile(tileData, mapData["Terrain Map"], x, y)) {
         let sprite = tile.sprite;

@@ -11,23 +11,14 @@
 
   <body x-data="">
     <main>
-      <h1 x-show="$store.replayId">
-        Loading replay <span x-text="$store.replayId"></span>...
-      </h1>
-      <h2 x-show="$store.mapId && !$store.mapSize">
-        Loading map <span x-text="$store.mapId"></span>...
-      </h2>
-      <h2 x-text="$store.mapLoadingError" x-show="$store.mapLoadingError"></h2>
-
       <div
         id="map-info"
-        x-show="$store.mapName && $store.mapAuthor"
         style="text-align: center;"
       >
-        <h2>
+        <h1 x-show="$store.mapName is defined">
           Map: <span x-text="$store.mapName"></span>
-        </h2>
-        <h3>
+        </h1>
+        <h3 x-show="$store.mapAuthor is defined">
           by <span x-text="$store.mapAuthor"></span>
         </h3>
       </div> <!-- map-info -->

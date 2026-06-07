@@ -1,5 +1,5 @@
 import { BASE_SIZE, MAP_PADDING } from "./constants";
-import { Vector2 } from "./types";
+import { Vector2 } from "../types";
 
 /** Returns the grid coordinates of a mouse event.
  *  Returns `null` if the mouse event is outside of the canvas.
