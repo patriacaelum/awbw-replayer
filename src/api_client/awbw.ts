@@ -1,26 +1,6 @@
 import { fetch } from "@tauri-apps/plugin-http";
 import { info, error } from "@tauri-apps/plugin-log";
-
-export type AWBWMapInfo = {
-  err: string | undefined;
-  message: string | undefined;
-  Name: string;
-  Author: string;
-  "Player Count": number;
-  "Published Date": string;
-  "Size X": number;
-  "Size Y": number;
-  "Terrain Map": number[][];
-  "Predeployed Units": AWBWPredeployedUnit[];
-}
-
-type AWBWPredeployedUnit = {
-  "Unit ID": number;
-  "Unit X": number;
-  "Unit Y": number;
-  "Unit HP": number;
-  "Country Code": string;
-}
+import type { AWBWMapInfo } from "./types";
 
 export class AWBWAPIClient {
   baseURL: string = "https://awbw.amarriner.com/api";

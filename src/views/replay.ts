@@ -1,7 +1,7 @@
 import Alpine from "alpinejs";
 import { info } from "@tauri-apps/plugin-log";
 import { loadReplay, loadMap } from "../replay/loader";
-import { drawMap } from "../replay/map";
+import { drawMap } from "../map/draw";
 import { mouseEventToGrid } from "../map/grid";
 import { drawTileAtGrid } from "../map/draw";
 
