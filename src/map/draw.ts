@@ -31,7 +31,7 @@ export async function drawMap(
       const tileId = getCorrectedTileId(tileData, mapData["Terrain Map"], x, y);
       const tile = tileData.get(tileId);
 
-      if (shortenTile(tileData, mapData["Terrain Map"], x, y)) {
+      if (tile.terrain === "mountain" && shortenTile(tileData, mapData["Terrain Map"], x, y)) {
         let sprite = tile.sprite;
         if (Array.isArray(sprite)) sprite = sprite[0];
         const scaleY = BASE_SIZE * scaleFactor / sprite.naturalHeight;
@@ -41,6 +41,8 @@ export async function drawMap(
       }
     }
   }
+
+  info(`Successfully drew map ${mapData.Name}`);
  
   return { tileData, mapSize };
 }
@@ -49,7 +51,7 @@ function shortenTile(tileData: TileData, map: number[][], x: number, y: number):
   const tileNorth = tileData.get(map[x][Math.max(y - 1, 0)]);
   const shortenTiles = ["city", "base", "airport", "port", "hq", "silo", "com_tower", "lab"];
 
-  if (tileNorth.terrain && tileNorth.terrain in shortenTiles) {
+  if (tileNorth.terrain && shortenTiles.includes(tileNorth.terrain)) {
     return true;
   }
 
